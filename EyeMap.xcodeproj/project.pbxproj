@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */; };
+		AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E311D2A732900A5D571 /* AppDelegate.swift */; };
+		AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E331D2A732900A5D571 /* ViewController.swift */; };
+		AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E351D2A732900A5D571 /* Main.storyboard */; };
+		AC7F7E391D2A732900A5D571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E381D2A732900A5D571 /* Assets.xcassets */; };
+		AC7F7E3C1D2A732900A5D571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */; };
+		AC7F7E471D2A732900A5D571 /* EyeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E461D2A732900A5D571 /* EyeMapTests.swift */; };
+		AC7F7E521D2A732900A5D571 /* EyeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E511D2A732900A5D571 /* EyeMapUITests.swift */; };
+		AC80F2091D2D6F460065B22C /* MemeFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F2081D2D6F460065B22C /* MemeFindViewController.swift */; };
+		AC80F2101D2EAD130065B22C /* EyeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F20F1D2EAD130065B22C /* EyeNavigationController.swift */; };
+		AC80F2121D33FDC10065B22C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F2111D33FDC10065B22C /* MapViewController.swift */; };
+		AC80F2191D3401680065B22C /* megane.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F2171D3401680065B22C /* megane.png */; };
+		AC80F21B1D3401B10065B22C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F21A1D3401B10065B22C /* map.png */; };
+		AC80F21D1D3402100065B22C /* EyeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F21C1D3402100065B22C /* EyeTabBarController.swift */; };
+		AC8529121D2B82E3005B1E93 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85290C1D2B8257005B1E93 /* MEMELib.framework */; };
+		AC8529141D2B82E7005B1E93 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC85290C1D2B8257005B1E93 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC85291B1D2BEC9E005B1E93 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */; };
+		AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291F1D2BF971005B1E93 /* StatusCheck.swift */; };
+		AC8529241D2C181A005B1E93 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8529221D2C181A005B1E93 /* Fabric.framework */; };
+		AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8529261D2C18F8005B1E93 /* LoginViewController.swift */; };
+		AC85292B1D2C19BB005B1E93 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8529281D2C19BB005B1E93 /* TwitterKit.framework */; };
+		AC85292C1D2C19BB005B1E93 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */; };
+		AC85292D1D2C19BB005B1E93 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC7F7E431D2A732900A5D571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC7F7E261D2A732900A5D571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7F7E2D1D2A732900A5D571;
+			remoteInfo = EyeMap;
+		};
+		AC7F7E4E1D2A732900A5D571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC7F7E261D2A732900A5D571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7F7E2D1D2A732900A5D571;
+			remoteInfo = EyeMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC8529151D2B82E7005B1E93 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC8529141D2B82E7005B1E93 /* MEMELib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EyeMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D26747475CF34468C90AFD /* Pods-EyeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.debug.xcconfig"; sourceTree = "<group>"; };
+		7094BFF9C4164DF2A35EEDC6 /* Pods-EyeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.release.xcconfig"; sourceTree = "<group>"; };
+		AC7F7E2E1D2A732900A5D571 /* EyeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7F7E311D2A732900A5D571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC7F7E331D2A732900A5D571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC7F7E361D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC7F7E381D2A732900A5D571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC7F7E3B1D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC7F7E3D1D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7F7E421D2A732900A5D571 /* EyeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7F7E461D2A732900A5D571 /* EyeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeMapTests.swift; sourceTree = "<group>"; };
+		AC7F7E481D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7F7E4D1D2A732900A5D571 /* EyeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7F7E511D2A732900A5D571 /* EyeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeMapUITests.swift; sourceTree = "<group>"; };
+		AC7F7E531D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC80F2081D2D6F460065B22C /* MemeFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeFindViewController.swift; sourceTree = "<group>"; };
+		AC80F20F1D2EAD130065B22C /* EyeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeNavigationController.swift; sourceTree = "<group>"; };
+		AC80F2111D33FDC10065B22C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AC80F2171D3401680065B22C /* megane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = megane.png; path = Images/megane.png; sourceTree = SOURCE_ROOT; };
+		AC80F21A1D3401B10065B22C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = Images/map.png; sourceTree = SOURCE_ROOT; };
+		AC80F21C1D3402100065B22C /* EyeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeTabBarController.swift; sourceTree = "<group>"; };
+		AC85290C1D2B8257005B1E93 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
+		AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeMap-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
+		AC85291F1D2BF971005B1E93 /* StatusCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCheck.swift; sourceTree = "<group>"; };
+		AC8529221D2C181A005B1E93 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		AC8529261D2C18F8005B1E93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC8529281D2C19BB005B1E93 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC7F7E2B1D2A732900A5D571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC85292D1D2C19BB005B1E93 /* TwitterCore.framework in Frameworks */,
+				AC8529121D2B82E3005B1E93 /* MEMELib.framework in Frameworks */,
+				AC8529241D2C181A005B1E93 /* Fabric.framework in Frameworks */,
+				AC85292B1D2C19BB005B1E93 /* TwitterKit.framework in Frameworks */,
+				3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E3F1D2A732900A5D571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E4A1D2A732900A5D571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC7F7E251D2A732900A5D571 = {
+			isa = PBXGroup;
+			children = (
+				AC7F7E301D2A732900A5D571 /* EyeMap */,
+				AC7F7E451D2A732900A5D571 /* EyeMapTests */,
+				AC7F7E501D2A732900A5D571 /* EyeMapUITests */,
+				AC7F7E2F1D2A732900A5D571 /* Products */,
+				AC85292F1D2C19E3005B1E93 /* framework */,
+				F086F5A7890559A9BDCE5861 /* Pods */,
+				F016CB7CF032957FC333BAC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC7F7E2F1D2A732900A5D571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F7E2E1D2A732900A5D571 /* EyeMap.app */,
+				AC7F7E421D2A732900A5D571 /* EyeMapTests.xctest */,
+				AC7F7E4D1D2A732900A5D571 /* EyeMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC7F7E301D2A732900A5D571 /* EyeMap */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F7E311D2A732900A5D571 /* AppDelegate.swift */,
+				AC80F21C1D3402100065B22C /* EyeTabBarController.swift */,
+				AC80F20F1D2EAD130065B22C /* EyeNavigationController.swift */,
+				AC80F20C1D2DFA240065B22C /* ViewController */,
+				AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */,
+				AC85291F1D2BF971005B1E93 /* StatusCheck.swift */,
+				AC7F7E351D2A732900A5D571 /* Main.storyboard */,
+				AC7F7E381D2A732900A5D571 /* Assets.xcassets */,
+				AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */,
+				AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */,
+				AC80F2131D34001F0065B22C /* Images */,
+				AC7F7E3D1D2A732900A5D571 /* Info.plist */,
+			);
+			path = EyeMap;
+			sourceTree = "<group>";
+		};
+		AC7F7E451D2A732900A5D571 /* EyeMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F7E461D2A732900A5D571 /* EyeMapTests.swift */,
+				AC7F7E481D2A732900A5D571 /* Info.plist */,
+			);
+			path = EyeMapTests;
+			sourceTree = "<group>";
+		};
+		AC7F7E501D2A732900A5D571 /* EyeMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F7E511D2A732900A5D571 /* EyeMapUITests.swift */,
+				AC7F7E531D2A732900A5D571 /* Info.plist */,
+			);
+			path = EyeMapUITests;
+			sourceTree = "<group>";
+		};
+		AC80F20C1D2DFA240065B22C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC80F2081D2D6F460065B22C /* MemeFindViewController.swift */,
+				AC8529261D2C18F8005B1E93 /* LoginViewController.swift */,
+				AC7F7E331D2A732900A5D571 /* ViewController.swift */,
+				AC80F2111D33FDC10065B22C /* MapViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC80F2131D34001F0065B22C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AC80F21A1D3401B10065B22C /* map.png */,
+				AC80F2171D3401680065B22C /* megane.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AC85292F1D2C19E3005B1E93 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				AC8529221D2C181A005B1E93 /* Fabric.framework */,
+				AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */,
+				AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */,
+				AC85290C1D2B8257005B1E93 /* MEMELib.framework */,
+				AC8529281D2C19BB005B1E93 /* TwitterKit.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		F016CB7CF032957FC333BAC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F086F5A7890559A9BDCE5861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57D26747475CF34468C90AFD /* Pods-EyeMap.debug.xcconfig */,
+				7094BFF9C4164DF2A35EEDC6 /* Pods-EyeMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC7F7E2D1D2A732900A5D571 /* EyeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7F7E561D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMap" */;
+			buildPhases = (
+				7868ACF870DF472D702AA697 /* Check Pods Manifest.lock */,
+				AC7F7E2A1D2A732900A5D571 /* Sources */,
+				AC7F7E2B1D2A732900A5D571 /* Frameworks */,
+				AC7F7E2C1D2A732900A5D571 /* Resources */,
+				AC8529151D2B82E7005B1E93 /* Embed Frameworks */,
+				AC8529211D2C17DC005B1E93 /* ShellScript */,
+				949D1D1250983D80FF17CB54 /* Embed Pods Frameworks */,
+				FAC234B968838AB4FD3296BC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeMap;
+			productName = EyeMap;
+			productReference = AC7F7E2E1D2A732900A5D571 /* EyeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC7F7E411D2A732900A5D571 /* EyeMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7F7E591D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMapTests" */;
+			buildPhases = (
+				AC7F7E3E1D2A732900A5D571 /* Sources */,
+				AC7F7E3F1D2A732900A5D571 /* Frameworks */,
+				AC7F7E401D2A732900A5D571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC7F7E441D2A732900A5D571 /* PBXTargetDependency */,
+			);
+			name = EyeMapTests;
+			productName = EyeMapTests;
+			productReference = AC7F7E421D2A732900A5D571 /* EyeMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC7F7E4C1D2A732900A5D571 /* EyeMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7F7E5C1D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMapUITests" */;
+			buildPhases = (
+				AC7F7E491D2A732900A5D571 /* Sources */,
+				AC7F7E4A1D2A732900A5D571 /* Frameworks */,
+				AC7F7E4B1D2A732900A5D571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC7F7E4F1D2A732900A5D571 /* PBXTargetDependency */,
+			);
+			name = EyeMapUITests;
+			productName = EyeMapUITests;
+			productReference = AC7F7E4D1D2A732900A5D571 /* EyeMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC7F7E261D2A732900A5D571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mario;
+				TargetAttributes = {
+					AC7F7E2D1D2A732900A5D571 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RHNH48U726;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					AC7F7E411D2A732900A5D571 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AC7F7E2D1D2A732900A5D571;
+					};
+					AC7F7E4C1D2A732900A5D571 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AC7F7E2D1D2A732900A5D571;
+					};
+				};
+			};
+			buildConfigurationList = AC7F7E291D2A732900A5D571 /* Build configuration list for PBXProject "EyeMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC7F7E251D2A732900A5D571;
+			productRefGroup = AC7F7E2F1D2A732900A5D571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC7F7E2D1D2A732900A5D571 /* EyeMap */,
+				AC7F7E411D2A732900A5D571 /* EyeMapTests */,
+				AC7F7E4C1D2A732900A5D571 /* EyeMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC7F7E2C1D2A732900A5D571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC85292C1D2C19BB005B1E93 /* TwitterKitResources.bundle in Resources */,
+				AC7F7E3C1D2A732900A5D571 /* LaunchScreen.storyboard in Resources */,
+				AC7F7E391D2A732900A5D571 /* Assets.xcassets in Resources */,
+				AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */,
+				AC80F21B1D3401B10065B22C /* map.png in Resources */,
+				AC80F2191D3401680065B22C /* megane.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E401D2A732900A5D571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E4B1D2A732900A5D571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7868ACF870DF472D702AA697 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		949D1D1250983D80FF17CB54 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8529211D2C17DC005B1E93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3838b95200e9d515088f8fa539850df7d7ca5a9a 0d72a3848cfe6b7beabbacd2c8c56ecace8d78e1340441e6e5714eed03e7ceac";
+		};
+		FAC234B968838AB4FD3296BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC7F7E2A1D2A732900A5D571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */,
+				AC85291B1D2BEC9E005B1E93 /* RealtimeData.swift in Sources */,
+				AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */,
+				AC80F2091D2D6F460065B22C /* MemeFindViewController.swift in Sources */,
+				AC80F2101D2EAD130065B22C /* EyeNavigationController.swift in Sources */,
+				AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */,
+				AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */,
+				AC80F2121D33FDC10065B22C /* MapViewController.swift in Sources */,
+				AC80F21D1D3402100065B22C /* EyeTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E3E1D2A732900A5D571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7F7E471D2A732900A5D571 /* EyeMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F7E491D2A732900A5D571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7F7E521D2A732900A5D571 /* EyeMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC7F7E441D2A732900A5D571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7F7E2D1D2A732900A5D571 /* EyeMap */;
+			targetProxy = AC7F7E431D2A732900A5D571 /* PBXContainerItemProxy */;
+		};
+		AC7F7E4F1D2A732900A5D571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7F7E2D1D2A732900A5D571 /* EyeMap */;
+			targetProxy = AC7F7E4E1D2A732900A5D571 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC7F7E351D2A732900A5D571 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC7F7E361D2A732900A5D571 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC7F7E3B1D2A732900A5D571 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC7F7E541D2A732900A5D571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC7F7E551D2A732900A5D571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC7F7E571D2A732900A5D571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D26747475CF34468C90AFD /* Pods-EyeMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EyeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeMap/EyeMap-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		AC7F7E581D2A732900A5D571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7094BFF9C4164DF2A35EEDC6 /* Pods-EyeMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = EyeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeMap/EyeMap-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AC7F7E5A1D2A732900A5D571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EyeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeMap.app/EyeMap";
+			};
+			name = Debug;
+		};
+		AC7F7E5B1D2A732900A5D571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EyeMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeMap.app/EyeMap";
+			};
+			name = Release;
+		};
+		AC7F7E5D1D2A732900A5D571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EyeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EyeMap;
+			};
+			name = Debug;
+		};
+		AC7F7E5E1D2A732900A5D571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EyeMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.keio.sfc.ht.EyeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EyeMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC7F7E291D2A732900A5D571 /* Build configuration list for PBXProject "EyeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7F7E541D2A732900A5D571 /* Debug */,
+				AC7F7E551D2A732900A5D571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7F7E561D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7F7E571D2A732900A5D571 /* Debug */,
+				AC7F7E581D2A732900A5D571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7F7E591D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7F7E5A1D2A732900A5D571 /* Debug */,
+				AC7F7E5B1D2A732900A5D571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7F7E5C1D2A732900A5D571 /* Build configuration list for PBXNativeTarget "EyeMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7F7E5D1D2A732900A5D571 /* Debug */,
+				AC7F7E5E1D2A732900A5D571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC7F7E261D2A732900A5D571 /* Project object */;
+}
