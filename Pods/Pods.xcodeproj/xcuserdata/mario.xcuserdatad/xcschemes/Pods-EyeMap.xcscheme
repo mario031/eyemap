@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '890379F0F6ABC27C86CF73CC'
+               BlueprintIdentifier = '87AE38ED7E3CC9EF1D317159'
                BlueprintName = 'Pods-EyeMap'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-EyeMap.a'>

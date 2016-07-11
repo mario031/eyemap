@@ -1,1 +1,0 @@
-../../../DTMHeatmap/Color Providers/DTMDiffColorProvider.h

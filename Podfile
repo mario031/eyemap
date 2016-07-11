@@ -5,7 +5,6 @@
 
 target 'EyeMap' do
 
-	pod 'DTMHeatmap'
 	pod 'SVProgressHUD'
 end
 

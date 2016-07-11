@@ -21,15 +21,14 @@
 		AC80F2191D3401680065B22C /* megane.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F2171D3401680065B22C /* megane.png */; };
 		AC80F21B1D3401B10065B22C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F21A1D3401B10065B22C /* map.png */; };
 		AC80F21D1D3402100065B22C /* EyeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F21C1D3402100065B22C /* EyeTabBarController.swift */; };
-		AC8529121D2B82E3005B1E93 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85290C1D2B8257005B1E93 /* MEMELib.framework */; };
-		AC8529141D2B82E7005B1E93 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC85290C1D2B8257005B1E93 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC85291B1D2BEC9E005B1E93 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */; };
 		AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291F1D2BF971005B1E93 /* StatusCheck.swift */; };
-		AC8529241D2C181A005B1E93 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8529221D2C181A005B1E93 /* Fabric.framework */; };
 		AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8529261D2C18F8005B1E93 /* LoginViewController.swift */; };
-		AC85292B1D2C19BB005B1E93 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8529281D2C19BB005B1E93 /* TwitterKit.framework */; };
-		AC85292C1D2C19BB005B1E93 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */; };
-		AC85292D1D2C19BB005B1E93 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */; };
+		ACAF879E1D341640009EE034 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */; };
+		ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574E1D3415F2003D7E4E /* Fabric.framework */; };
+		ACCC57531D3415F2003D7E4E /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574F1D3415F2003D7E4E /* MEMELib.framework */; };
+		ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57501D3415F2003D7E4E /* TwitterCore.framework */; };
+		ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57511D3415F2003D7E4E /* TwitterKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,20 +47,6 @@
 			remoteInfo = EyeMap;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AC8529151D2B82E7005B1E93 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AC8529141D2B82E7005B1E93 /* MEMELib.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EyeMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,15 +71,15 @@
 		AC80F2171D3401680065B22C /* megane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = megane.png; path = Images/megane.png; sourceTree = SOURCE_ROOT; };
 		AC80F21A1D3401B10065B22C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = Images/map.png; sourceTree = SOURCE_ROOT; };
 		AC80F21C1D3402100065B22C /* EyeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeTabBarController.swift; sourceTree = "<group>"; };
-		AC85290C1D2B8257005B1E93 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
 		AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
 		AC85291F1D2BF971005B1E93 /* StatusCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCheck.swift; sourceTree = "<group>"; };
-		AC8529221D2C181A005B1E93 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		AC8529261D2C18F8005B1E93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AC8529281D2C19BB005B1E93 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		ACCC574E1D3415F2003D7E4E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ACCC574F1D3415F2003D7E4E /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
+		ACCC57501D3415F2003D7E4E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		ACCC57511D3415F2003D7E4E /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC85292D1D2C19BB005B1E93 /* TwitterCore.framework in Frameworks */,
-				AC8529121D2B82E3005B1E93 /* MEMELib.framework in Frameworks */,
-				AC8529241D2C181A005B1E93 /* Fabric.framework in Frameworks */,
-				AC85292B1D2C19BB005B1E93 /* TwitterKit.framework in Frameworks */,
 				3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */,
+				ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */,
+				ACCC57531D3415F2003D7E4E /* MEMELib.framework in Frameworks */,
+				ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */,
+				ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,11 +195,11 @@
 		AC85292F1D2C19E3005B1E93 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				AC8529221D2C181A005B1E93 /* Fabric.framework */,
-				AC8529291D2C19BB005B1E93 /* TwitterKitResources.bundle */,
-				AC85292A1D2C19BB005B1E93 /* TwitterCore.framework */,
-				AC85290C1D2B8257005B1E93 /* MEMELib.framework */,
-				AC8529281D2C19BB005B1E93 /* TwitterKit.framework */,
+				ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */,
+				ACCC574E1D3415F2003D7E4E /* Fabric.framework */,
+				ACCC574F1D3415F2003D7E4E /* MEMELib.framework */,
+				ACCC57501D3415F2003D7E4E /* TwitterCore.framework */,
+				ACCC57511D3415F2003D7E4E /* TwitterKit.framework */,
 			);
 			name = framework;
 			sourceTree = "<group>";
@@ -247,7 +232,6 @@
 				AC7F7E2A1D2A732900A5D571 /* Sources */,
 				AC7F7E2B1D2A732900A5D571 /* Frameworks */,
 				AC7F7E2C1D2A732900A5D571 /* Resources */,
-				AC8529151D2B82E7005B1E93 /* Embed Frameworks */,
 				AC8529211D2C17DC005B1E93 /* ShellScript */,
 				949D1D1250983D80FF17CB54 /* Embed Pods Frameworks */,
 				FAC234B968838AB4FD3296BC /* Copy Pods Resources */,
@@ -351,11 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC85292C1D2C19BB005B1E93 /* TwitterKitResources.bundle in Resources */,
 				AC7F7E3C1D2A732900A5D571 /* LaunchScreen.storyboard in Resources */,
 				AC7F7E391D2A732900A5D571 /* Assets.xcassets in Resources */,
 				AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */,
 				AC80F21B1D3401B10065B22C /* map.png in Resources */,
+				ACAF879E1D341640009EE034 /* TwitterKitResources.bundle in Resources */,
 				AC80F2191D3401680065B22C /* megane.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +581,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/Fabric/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = EyeMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -615,6 +601,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/Fabric/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = EyeMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

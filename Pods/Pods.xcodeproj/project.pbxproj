@@ -10,99 +10,20 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00DEA16376F2998880033F3FA786DB37</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0306FF6D5DF3D7AC05B4284EC5FC9281</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0306FF6D5DF3D7AC05B4284EC5FC9281</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SVProgressHUD.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08848A4FD8435405ACCF0968EDDAB39D</key>
+		<key>035CB6C836B78EB37C4E6C442FF8BB1E</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>7B7220718731EF7B704E188364A8836D</string>
-				<string>BE9384041B9F02CC4C12CF5F398620A5</string>
-				<string>42E94FB83172E5BF17FAE0087F1A9D9B</string>
+				<string>2D619B9ACB8981FDEB8B6C16926AD452</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
+			<string>Resources</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>08D7E229FDD4BD65E74C4BEAFFCE0BB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SVProgressAnimatedView.m</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVProgressAnimatedView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C8E2B0ECCD1D596D936E7A6A4FDD24F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SVRadialGradientLayer.m</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVRadialGradientLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>107E6CE8BEB0ED67EDD3A9F05EB0E19C</key>
+		<key>05667E965CABA72CC9D2B5A4CA8B88F9</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>B662E395580CD2FF80CD021A6BC754AF</string>
@@ -134,129 +55,30 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>12E8D993A5EC381478DFB92720643606</key>
+		<key>0C618FDA33FCF76A60650EE4C6552E18</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DTMDiffHeatmap.m</string>
-			<key>path</key>
-			<string>Heatmaps/DTMDiffHeatmap.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>152AB978CE85E0D51F72781C075244A7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SVProgressHUD.m</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVProgressHUD.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1577AE48E23FDAAC6947B8BA3AFB0F89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurationList</key>
+			<string>E8B9B0D5B05481E8BDCB0B7DB19CDFD3</string>
+			<key>buildPhases</key>
 			<array>
-				<string>BB2F0CAD2BB47DB4CD1B4D775F9BEAC5</string>
-				<string>BAC40EA1192D8A64F3B54298AFD21EA8</string>
+				<string>41271988766CEE68D801FB88F62604C4</string>
+				<string>99F06D84FA9B3972655DC907F37586F8</string>
+				<string>D8E5B6313AE1910AAF04CE390FEA47F6</string>
 			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>189D3DD041CE65281D550E948AAAA893</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>30D17A7AD39925AD3840881D2262DAB6</string>
-				<string>3DBF178E7C81B30E0916DC1910BA0816</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B2AFD52AC8EF71625FAADC94DC00A00</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>107E6CE8BEB0ED67EDD3A9F05EB0E19C</string>
-				<string>22ADA5A3FA301CEE4BBBC08E14A36718</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1CC17023FCA8C9EF351989AE77FFA2F5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AA896D17155B495B63BD12A2F29F645D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1CF9A0515E4D70439C3A23E181D7A908</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5D4647102E5651A9F943581EFA759018</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>22ADA5A3FA301CEE4BBBC08E14A36718</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6495089273A77BF57E81F840D3AD8B99</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+			<string>SVProgressHUD</string>
+			<key>productName</key>
+			<string>SVProgressHUD</string>
+			<key>productReference</key>
+			<string>B6338120E088724972BB326A4904A9A2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>258B0C8029B3982F03A30ED9FB271283</key>
 		<dict>
@@ -270,21 +92,6 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>293C64BE2C953F0254E346E9D8098A7B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DTMDiffColorProvider.h</string>
-			<key>path</key>
-			<string>Color Providers/DTMDiffColorProvider.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2B389FAB51F6EEA43F72CA7BDC8E8E28</key>
 		<dict>
@@ -372,6 +179,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2D619B9ACB8981FDEB8B6C16926AD452</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>SVProgressHUD.bundle</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressHUD.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -386,42 +208,10 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>30D17A7AD39925AD3840881D2262DAB6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9BE5EA99AAFD0B283B9650BD75F5D771</string>
-				<string>B451779738EA6C5666BF2AD01E1DC99B</string>
-				<string>293C64BE2C953F0254E346E9D8098A7B</string>
-				<string>DA0DB2666050147B834153905A8838DE</string>
-				<string>3B62618866F668EDFB1E561EA22A9C8C</string>
-				<string>12E8D993A5EC381478DFB92720643606</string>
-				<string>7A127A921251C68956CA021D2E5D4E86</string>
-				<string>48392CA8D9CBDF222165A223AAC969B4</string>
-				<string>8D7AB5D3C0758E9806E9ECEB3D38F3B3</string>
-				<string>BA78FAA2C1DF9A9FAF3021514B9AAA3E</string>
-				<string>4274418189986912F07FA508A9DEA69E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DTMHeatmap</string>
-			<key>path</key>
-			<string>DTMHeatmap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>333976F28C5DCC063F9EB546C6A277D7</key>
+		<key>2DA97C80A8A0421B6065A5DECB82E361</key>
 		<dict>
 			<key>fileRef</key>
-			<string>258B0C8029B3982F03A30ED9FB271283</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3558E86DDA9CE0C79FEED328945D6E1B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08D7E229FDD4BD65E74C4BEAFFCE0BB1</string>
+			<string>B18F24645AA4D651DFC7B69A3A0833DB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -439,113 +229,29 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3B62618866F668EDFB1E561EA22A9C8C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DTMDiffHeatmap.h</string>
-			<key>path</key>
-			<string>Heatmaps/DTMDiffHeatmap.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D74DD7BFAEBA54F493AB4E3EC0B5B21</key>
+		<key>3EAE1AF13A58E13831B07BA23B4A13CC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3B62618866F668EDFB1E561EA22A9C8C</string>
+			<string>258B0C8029B3982F03A30ED9FB271283</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
-		<key>3D76E1E9EC407A0220849B27F3832A8D</key>
+		<key>41271988766CEE68D801FB88F62604C4</key>
 		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SVProgressHUD</string>
-			<key>target</key>
-			<string>E660E869D053184851DFF60E7E5CEB8D</string>
-			<key>targetProxy</key>
-			<string>998BFAB0FB8EB87D3FBBADBCFB157662</string>
-		</dict>
-		<key>3DBF178E7C81B30E0916DC1910BA0816</key>
-		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>6057B16DA4ED1C0C5CDEFBB5314AA4F1</string>
-				<string>4B2DD1B7727A098C4D9057D369D61208</string>
-				<string>6FE6A3FF1335D9866921A82A56F7A5BE</string>
-				<string>08D7E229FDD4BD65E74C4BEAFFCE0BB1</string>
-				<string>47A1234577F9EA38B3246D77CDDAA38B</string>
-				<string>152AB978CE85E0D51F72781C075244A7</string>
-				<string>C79FDA3ED0BBFAD80F52D106B5A9F17E</string>
-				<string>0C8E2B0ECCD1D596D936E7A6A4FDD24F</string>
-				<string>679A46CDB3614B21D50BEDF185AE4CC5</string>
-				<string>F3B8DDBBB3B6D926D0FAC910DCACC410</string>
+				<string>AC0F97649CC13F0089B7674E422C8F98</string>
+				<string>D2AB47D58216F56A11F00BE98528600E</string>
+				<string>96D556C1042044AD3D84E177CD81CF19</string>
+				<string>F3F873CFA73B58A9532811A582189ED5</string>
+				<string>FA6C1FBB62BB4B34F7711C776876C6C7</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SVProgressHUD</string>
-			<key>path</key>
-			<string>SVProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F3FD8C23A8A6911D18BE4D7EABE3EE0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BA78FAA2C1DF9A9FAF3021514B9AAA3E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>4274418189986912F07FA508A9DEA69E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B0DC65B512672F451F4EC8BF4C783666</string>
-				<string>5D4647102E5651A9F943581EFA759018</string>
-				<string>EA4419A7A3472E4A476E699772B45730</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/DTMHeatmap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42E94FB83172E5BF17FAE0087F1A9D9B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSVProgressHUD.a</string>
-			<key>path</key>
-			<string>libSVProgressHUD.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>433CD3331B6C3787F473C941B61FC68F</key>
 		<dict>
@@ -557,51 +263,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47A1234577F9EA38B3246D77CDDAA38B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SVProgressHUD.h</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVProgressHUD.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48392CA8D9CBDF222165A223AAC969B4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DTMHeatmap.m</string>
-			<key>path</key>
-			<string>Heatmaps/DTMHeatmap.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B2DD1B7727A098C4D9057D369D61208</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SVIndefiniteAnimatedView.m</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVIndefiniteAnimatedView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -618,93 +279,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4D20B4A08D642A4847A604222A537078</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B0DC65B512672F451F4EC8BF4C783666</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/DTMHeatmap/DTMHeatmap-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>4FE6534D4A851671069FA83A8850A6F8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>333976F28C5DCC063F9EB546C6A277D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5260884BDF934AE10F692B72DE90EC0B</key>
+		<key>51FFE0E17E7A548171BC2055BA2BF101</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B451779738EA6C5666BF2AD01E1DC99B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5588EB02F2847813C1B547F475CE7DFF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>85210245721D6E66981DAD184DB1C891</string>
-				<string>6B1E44C71B4BC882D099C55CCFAF3207</string>
-				<string>3D74DD7BFAEBA54F493AB4E3EC0B5B21</string>
-				<string>57D957685409B934330A63AFAC6DE692</string>
-				<string>BA2FC380A083103B29F80232D4941900</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>57846F830A2C9C8A0E7B7BC889008D1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4B2DD1B7727A098C4D9057D369D61208</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>57D957685409B934330A63AFAC6DE692</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A127A921251C68956CA021D2E5D4E86</string>
+			<string>C447657581C0A5726D1B490667A418D4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -714,13 +292,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>59CCC7FB5D8A5DC71FD69502034A8D55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>152AB978CE85E0D51F72781C075244A7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>5A0C6FE968931D888F00C9EC18DDF5BC</key>
 		<dict>
@@ -811,19 +382,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5D4647102E5651A9F943581EFA759018</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DTMHeatmap-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5F5C1635186E6960247C1F3C3DAE0AFD</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -834,21 +392,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-EyeMap-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6057B16DA4ED1C0C5CDEFBB5314AA4F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SVIndefiniteAnimatedView.h</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVIndefiniteAnimatedView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -865,23 +408,53 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>679A46CDB3614B21D50BEDF185AE4CC5</key>
+		<key>64C68F19C7FDB89739A12A754AC192B9</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>92828D84C42F1C79DEC01971CF27371A</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>SVIndefiniteAnimatedView.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVIndefiniteAnimatedView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6B1E44C71B4BC882D099C55CCFAF3207</key>
+		<key>68F7D46BED1E968333C3A6BF1D08EF35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVRadialGradientLayer.h</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVRadialGradientLayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A6073EEDABEA90F4218E48202444AB6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SVProgressHUD-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C170A3D0F6A9D9D3C1728FBFD48491E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>293C64BE2C953F0254E346E9D8098A7B</string>
+			<string>68F7D46BED1E968333C3A6BF1D08EF35</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -892,93 +465,31 @@
 				</array>
 			</dict>
 		</dict>
-		<key>6FE6A3FF1335D9866921A82A56F7A5BE</key>
+		<key>74588D48F629C3D7E6B7E12AB83072D6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>95EB61328BDA1070876281302DF94ACF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7639CFC0D8B53A181379B3D35CF6B409</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SVProgressAnimatedView.h</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>SVProgressHUD/SVProgressAnimatedView.h</string>
+			<string>SVProgressHUD.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>70A1BDC4FAAB3FC6FC065B99D1C66D3A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5260884BDF934AE10F692B72DE90EC0B</string>
-				<string>7424AFA106ED41365ADC6016B4ECB1F4</string>
-				<string>8C6B6E7D80D3926427AC45F79D0B948F</string>
-				<string>1CF9A0515E4D70439C3A23E181D7A908</string>
-				<string>B9BE251B11651FB09C0C596F9F5E03C3</string>
-				<string>3F3FD8C23A8A6911D18BE4D7EABE3EE0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7424AFA106ED41365ADC6016B4ECB1F4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA0DB2666050147B834153905A8838DE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>7A127A921251C68956CA021D2E5D4E86</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DTMHeatmap.h</string>
-			<key>path</key>
-			<string>Heatmaps/DTMHeatmap.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B4FAD8DFC2A6D1F06FF3F1AEA1D614E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>99BC42FB90F88E0AB6C473F0AB1E00C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7B7220718731EF7B704E188364A8836D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libDTMHeatmap.a</string>
-			<key>path</key>
-			<string>libDTMHeatmap.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -986,8 +497,8 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>433CD3331B6C3787F473C941B61FC68F</string>
-				<string>189D3DD041CE65281D550E948AAAA893</string>
-				<string>08848A4FD8435405ACCF0968EDDAB39D</string>
+				<string>74588D48F629C3D7E6B7E12AB83072D6</string>
+				<string>D3F9EB5C9806CC32E8B0BE767D60F6CE</string>
 				<string>A5260E3122F8D6D03D2F2105828B0AE7</string>
 			</array>
 			<key>isa</key>
@@ -995,101 +506,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>81D0BEDC580637009BD4405BDB901B6C</key>
+		<key>82AFCCA8F72436AE6B9F2CCF7F275DF3</key>
 		<dict>
-			<key>fileRef</key>
-			<string>47A1234577F9EA38B3246D77CDDAA38B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>85210245721D6E66981DAD184DB1C891</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9BE5EA99AAFD0B283B9650BD75F5D771</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8C6B6E7D80D3926427AC45F79D0B948F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>12E8D993A5EC381478DFB92720643606</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>8CA476BDFB4C9B405CA1CDA11E07AD5A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1B2AFD52AC8EF71625FAADC94DC00A00</string>
-			<key>buildPhases</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>7B4FAD8DFC2A6D1F06FF3F1AEA1D614E</string>
-				<string>1CC17023FCA8C9EF351989AE77FFA2F5</string>
+				<string>05667E965CABA72CC9D2B5A4CA8B88F9</string>
+				<string>9C6B919B3D9E41FF27B0D6BEE3E59560</string>
 			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D2FD894FE0DDB40C989230BC1704E3EF</string>
-				<string>3D76E1E9EC407A0220849B27F3832A8D</string>
-			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-EyeMap</string>
-			<key>productName</key>
-			<string>Pods-EyeMap</string>
-			<key>productReference</key>
-			<string>BE9384041B9F02CC4C12CF5F398620A5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>8D7AB5D3C0758E9806E9ECEB3D38F3B3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DTMHeatmapRenderer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F127BE79F58F97ED74C5FE3B8E05138</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C79FDA3ED0BBFAD80F52D106B5A9F17E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9194E0C2EE523DFF4BE85131913878FC</key>
+		<key>86E3DC48E40F8C3C553801CB0080D74D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1102,18 +533,87 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>92828D84C42F1C79DEC01971CF27371A</key>
+		<key>91D3D4DFD29A4F56551F828F4A739ADF</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildConfigurationList</key>
+			<string>82AFCCA8F72436AE6B9F2CCF7F275DF3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CEBAFEB9C2548C3C12C574DA9AECAFFB</string>
+				<string>B13E9B2B39BBB9DF123465179E75D9CA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CEEEAB421990B8DBEA1FF412629A0C43</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>SVProgressHUD.bundle</string>
+			<string>Pods-EyeMap</string>
+			<key>productName</key>
+			<string>Pods-EyeMap</string>
+			<key>productReference</key>
+			<string>F73BCF43C832C67130EE3CD265960CCD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>93F9DE229C16BDE3BE24AB19C538F572</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7639CFC0D8B53A181379B3D35CF6B409</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>95EB61328BDA1070876281302DF94ACF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DD6F6957AD861C2D16D4AAF6524973A8</string>
+				<string>64C68F19C7FDB89739A12A754AC192B9</string>
+				<string>C447657581C0A5726D1B490667A418D4</string>
+				<string>9C80D8A3D824F9A8BECF1041F91261A4</string>
+				<string>DBAD9287DEE246626CE463AB766658E4</string>
+				<string>D3444AE0273523AC57BAC6A7EBE004B0</string>
+				<string>68F7D46BED1E968333C3A6BF1D08EF35</string>
+				<string>E6A374AB1310EA4B32513CEB3F350671</string>
+				<string>035CB6C836B78EB37C4E6C442FF8BB1E</string>
+				<string>BDE1D145F4A334224EB232EECAD63B61</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SVProgressHUD</string>
 			<key>path</key>
-			<string>SVProgressHUD/SVProgressHUD.bundle</string>
+			<string>SVProgressHUD</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1130,50 +630,26 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9774E613CA59263537B9FA6131C844C0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EFF8FF47DFEF2944156EE44FC0C2D8AB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>70A1BDC4FAAB3FC6FC065B99D1C66D3A</string>
-				<string>4FE6534D4A851671069FA83A8850A6F8</string>
-				<string>5588EB02F2847813C1B547F475CE7DFF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DTMHeatmap</string>
-			<key>productName</key>
-			<string>DTMHeatmap</string>
-			<key>productReference</key>
-			<string>7B7220718731EF7B704E188364A8836D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>998BFAB0FB8EB87D3FBBADBCFB157662</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E660E869D053184851DFF60E7E5CEB8D</string>
-			<key>remoteInfo</key>
-			<string>SVProgressHUD</string>
-		</dict>
-		<key>99BC42FB90F88E0AB6C473F0AB1E00C2</key>
+		<key>96D556C1042044AD3D84E177CD81CF19</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5F5C1635186E6960247C1F3C3DAE0AFD</string>
+			<string>6A6073EEDABEA90F4218E48202444AB6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>99F06D84FA9B3972655DC907F37586F8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3EAE1AF13A58E13831B07BA23B4A13CC</string>
+				<string>2DA97C80A8A0421B6065A5DECB82E361</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>9B5937E9B16D784D7FB8EC6F67CA7923</key>
 		<dict>
@@ -1188,34 +664,52 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9BE5EA99AAFD0B283B9650BD75F5D771</key>
+		<key>9C6B919B3D9E41FF27B0D6BEE3E59560</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6495089273A77BF57E81F840D3AD8B99</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9C80D8A3D824F9A8BECF1041F91261A4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>DTMColorProvider.h</string>
+			<string>SVProgressAnimatedView.m</string>
 			<key>path</key>
-			<string>Color Providers/DTMColorProvider.h</string>
+			<string>SVProgressHUD/SVProgressAnimatedView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E1CE7502C05F7BDF4C80A92E00B3667</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6057B16DA4ED1C0C5CDEFBB5314AA4F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>A5260E3122F8D6D03D2F2105828B0AE7</key>
 		<dict>
@@ -1230,25 +724,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AA896D17155B495B63BD12A2F29F645D</key>
+		<key>A881AB2CB607D93A9ABD281313DE495E</key>
 		<dict>
 			<key>fileRef</key>
 			<string>258B0C8029B3982F03A30ED9FB271283</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B0DC65B512672F451F4EC8BF4C783666</key>
+		<key>AC0F97649CC13F0089B7674E422C8F98</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>64C68F19C7FDB89739A12A754AC192B9</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>DTMHeatmap.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B13E9B2B39BBB9DF123465179E75D9CA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A881AB2CB607D93A9ABD281313DE495E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>B18F24645AA4D651DFC7B69A3A0833DB</key>
 		<dict>
@@ -1263,156 +764,10 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>B451779738EA6C5666BF2AD01E1DC99B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DTMColorProvider.m</string>
-			<key>path</key>
-			<string>Color Providers/DTMColorProvider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B662E395580CD2FF80CD021A6BC754AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-EyeMap.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B93D75D49FF0E7774BFD455EEAA6C48B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9E1CE7502C05F7BDF4C80A92E00B3667</string>
-				<string>FEADBC291F09765D0EF1328044EA205B</string>
-				<string>81D0BEDC580637009BD4405BDB901B6C</string>
-				<string>8F127BE79F58F97ED74C5FE3B8E05138</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9BE251B11651FB09C0C596F9F5E03C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>48392CA8D9CBDF222165A223AAC969B4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BA2FC380A083103B29F80232D4941900</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8D7AB5D3C0758E9806E9ECEB3D38F3B3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BA78FAA2C1DF9A9FAF3021514B9AAA3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DTMHeatmapRenderer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BAC40EA1192D8A64F3B54298AFD21EA8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B18F24645AA4D651DFC7B69A3A0833DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB2F0CAD2BB47DB4CD1B4D775F9BEAC5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>258B0C8029B3982F03A30ED9FB271283</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB98B4570446176691A20EF1FEC1C14F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>57846F830A2C9C8A0E7B7BC889008D1C</string>
-				<string>3558E86DDA9CE0C79FEED328945D6E1B</string>
-				<string>D5EB8FB9334A2C96951A986A23F52C7F</string>
-				<string>59CCC7FB5D8A5DC71FD69502034A8D55</string>
-				<string>F9C77A64619E57B2B182A7D65B27285F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE9384041B9F02CC4C12CF5F398620A5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-EyeMap.a</string>
-			<key>path</key>
-			<string>libPods-EyeMap.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C151B4C481F70373C4EC4EE7D2E5AECB</key>
+		<key>B2E0FA006B90CAD995343775FCCEC679</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>0306FF6D5DF3D7AC05B4284EC5FC9281</string>
+			<string>7639CFC0D8B53A181379B3D35CF6B409</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1443,7 +798,69 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>C79FDA3ED0BBFAD80F52D106B5A9F17E</key>
+		<key>B6338120E088724972BB326A4904A9A2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libSVProgressHUD.a</string>
+			<key>path</key>
+			<string>libSVProgressHUD.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B662E395580CD2FF80CD021A6BC754AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-EyeMap.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BDE1D145F4A334224EB232EECAD63B61</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7639CFC0D8B53A181379B3D35CF6B409</string>
+				<string>6A6073EEDABEA90F4218E48202444AB6</string>
+				<string>86E3DC48E40F8C3C553801CB0080D74D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SVProgressHUD</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C447657581C0A5726D1B490667A418D4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1452,22 +869,106 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>SVRadialGradientLayer.h</string>
+			<string>SVProgressAnimatedView.h</string>
 			<key>path</key>
-			<string>SVProgressHUD/SVRadialGradientLayer.h</string>
+			<string>SVProgressHUD/SVProgressAnimatedView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D2FD894FE0DDB40C989230BC1704E3EF</key>
+		<key>C44A673029166A18EE7C83B8DEB2EC7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F5C1635186E6960247C1F3C3DAE0AFD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C94CC41272B19FE2EB8060BF941A86E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD6F6957AD861C2D16D4AAF6524973A8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CB91816EF65DAC349D74947B9D50D0AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DBAD9287DEE246626CE463AB766658E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CEBAFEB9C2548C3C12C574DA9AECAFFB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C44A673029166A18EE7C83B8DEB2EC7D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CEEEAB421990B8DBEA1FF412629A0C43</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>DTMHeatmap</string>
+			<string>SVProgressHUD</string>
 			<key>target</key>
-			<string>9774E613CA59263537B9FA6131C844C0</string>
+			<string>0C618FDA33FCF76A60650EE4C6552E18</string>
 			<key>targetProxy</key>
-			<string>F7DE13EE24D563602DBD01F958B81DFE</string>
+			<string>EB106E6D916037581D555FA476EF402F</string>
+		</dict>
+		<key>D2AB47D58216F56A11F00BE98528600E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C80D8A3D824F9A8BECF1041F91261A4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3444AE0273523AC57BAC6A7EBE004B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVProgressHUD.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressHUD.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3F9EB5C9806CC32E8B0BE767D60F6CE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F73BCF43C832C67130EE3CD265960CCD</string>
+				<string>B6338120E088724972BB326A4904A9A2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -1495,7 +996,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>08848A4FD8435405ACCF0968EDDAB39D</string>
+			<string>D3F9EB5C9806CC32E8B0BE767D60F6CE</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1504,72 +1005,27 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>9774E613CA59263537B9FA6131C844C0</string>
-				<string>8CA476BDFB4C9B405CA1CDA11E07AD5A</string>
-				<string>E660E869D053184851DFF60E7E5CEB8D</string>
+				<string>91D3D4DFD29A4F56551F828F4A739ADF</string>
+				<string>0C618FDA33FCF76A60650EE4C6552E18</string>
 			</array>
 		</dict>
-		<key>D5EB8FB9334A2C96951A986A23F52C7F</key>
+		<key>D8E5B6313AE1910AAF04CE390FEA47F6</key>
 		<dict>
-			<key>fileRef</key>
-			<string>E2F0A717B932872064991C5CC1CB055E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DA0DB2666050147B834153905A8838DE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DTMDiffColorProvider.m</string>
-			<key>path</key>
-			<string>Color Providers/DTMDiffColorProvider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2F0A717B932872064991C5CC1CB055E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SVProgressHUD-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E660E869D053184851DFF60E7E5CEB8D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F4F9E34F05F6A7FF6505F7E2F2F93567</string>
-			<key>buildPhases</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>BB98B4570446176691A20EF1FEC1C14F</string>
-				<string>1577AE48E23FDAAC6947B8BA3AFB0F89</string>
-				<string>B93D75D49FF0E7774BFD455EEAA6C48B</string>
+				<string>C94CC41272B19FE2EB8060BF941A86E8</string>
+				<string>51FFE0E17E7A548171BC2055BA2BF101</string>
+				<string>CB91816EF65DAC349D74947B9D50D0AF</string>
+				<string>6C170A3D0F6A9D9D3C1728FBFD48491E</string>
 			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SVProgressHUD</string>
-			<key>productName</key>
-			<string>SVProgressHUD</string>
-			<key>productReference</key>
-			<string>42E94FB83172E5BF17FAE0087F1A9D9B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>EA4419A7A3472E4A476E699772B45730</key>
+		<key>DBAD9287DEE246626CE463AB766658E4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1577,17 +1033,49 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVProgressHUD.h</string>
 			<key>path</key>
-			<string>DTMHeatmap-prefix.pch</string>
+			<string>SVProgressHUD/SVProgressHUD.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EFF8FF47DFEF2944156EE44FC0C2D8AB</key>
+		<key>DD6F6957AD861C2D16D4AAF6524973A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVIndefiniteAnimatedView.h</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVIndefiniteAnimatedView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6A374AB1310EA4B32513CEB3F350671</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVRadialGradientLayer.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVRadialGradientLayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8B9B0D5B05481E8BDCB0B7DB19CDFD3</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>F04FAA9D0712BB14E2C1EEDA50BD49BC</string>
-				<string>4D20B4A08D642A4847A604222A537078</string>
+				<string>B2E0FA006B90CAD995343775FCCEC679</string>
+				<string>93F9DE229C16BDE3BE24AB19C538F572</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -1596,72 +1084,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>F04FAA9D0712BB14E2C1EEDA50BD49BC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B0DC65B512672F451F4EC8BF4C783666</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/DTMHeatmap/DTMHeatmap-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F3B8DDBBB3B6D926D0FAC910DCACC410</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0306FF6D5DF3D7AC05B4284EC5FC9281</string>
-				<string>E2F0A717B932872064991C5CC1CB055E</string>
-				<string>9194E0C2EE523DFF4BE85131913878FC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/SVProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4F9E34F05F6A7FF6505F7E2F2F93567</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C151B4C481F70373C4EC4EE7D2E5AECB</string>
-				<string>00DEA16376F2998880033F3FA786DB37</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F7DE13EE24D563602DBD01F958B81DFE</key>
+		<key>EB106E6D916037581D555FA476EF402F</key>
 		<dict>
 			<key>containerPortal</key>
 			<string>D41D8CD98F00B204E9800998ECF8427E</string>
@@ -1670,30 +1093,38 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>9774E613CA59263537B9FA6131C844C0</string>
+			<string>0C618FDA33FCF76A60650EE4C6552E18</string>
 			<key>remoteInfo</key>
-			<string>DTMHeatmap</string>
+			<string>SVProgressHUD</string>
 		</dict>
-		<key>F9C77A64619E57B2B182A7D65B27285F</key>
+		<key>F3F873CFA73B58A9532811A582189ED5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0C8E2B0ECCD1D596D936E7A6A4FDD24F</string>
+			<string>D3444AE0273523AC57BAC6A7EBE004B0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>FEADBC291F09765D0EF1328044EA205B</key>
+		<key>F73BCF43C832C67130EE3CD265960CCD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-EyeMap.a</string>
+			<key>path</key>
+			<string>libPods-EyeMap.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FA6C1FBB62BB4B34F7711C776876C6C7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6FE6A3FF1335D9866921A82A56F7A5BE</string>
+			<string>E6A374AB1310EA4B32513CEB3F350671</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 	</dict>
 	<key>rootObject</key>

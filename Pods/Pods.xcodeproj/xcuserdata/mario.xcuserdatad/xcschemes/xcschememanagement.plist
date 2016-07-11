@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DTMHeatmap.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-EyeMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8CA476BDFB4C9B405CA1CDA11E07AD5A</key>
+		<key>0C618FDA33FCF76A60650EE4C6552E18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9774E613CA59263537B9FA6131C844C0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E660E869D053184851DFF60E7E5CEB8D</key>
+		<key>91D3D4DFD29A4F56551F828F4A739ADF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
