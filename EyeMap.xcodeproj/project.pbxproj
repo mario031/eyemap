@@ -25,8 +25,9 @@
 		AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291F1D2BF971005B1E93 /* StatusCheck.swift */; };
 		AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8529261D2C18F8005B1E93 /* LoginViewController.swift */; };
 		ACAF879E1D341640009EE034 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */; };
+		ACAF879F1D341775009EE034 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574F1D3415F2003D7E4E /* MEMELib.framework */; };
+		ACAF87A01D341775009EE034 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574F1D3415F2003D7E4E /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574E1D3415F2003D7E4E /* Fabric.framework */; };
-		ACCC57531D3415F2003D7E4E /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574F1D3415F2003D7E4E /* MEMELib.framework */; };
 		ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57501D3415F2003D7E4E /* TwitterCore.framework */; };
 		ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57511D3415F2003D7E4E /* TwitterKit.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,20 @@
 			remoteInfo = EyeMap;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACAF87A11D341776009EE034 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACAF87A01D341775009EE034 /* MEMELib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EyeMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +104,7 @@
 			files = (
 				3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */,
 				ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */,
-				ACCC57531D3415F2003D7E4E /* MEMELib.framework in Frameworks */,
+				ACAF879F1D341775009EE034 /* MEMELib.framework in Frameworks */,
 				ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */,
 				ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */,
 			);
@@ -235,6 +250,7 @@
 				AC8529211D2C17DC005B1E93 /* ShellScript */,
 				949D1D1250983D80FF17CB54 /* Embed Pods Frameworks */,
 				FAC234B968838AB4FD3296BC /* Copy Pods Resources */,
+				ACAF87A11D341776009EE034 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
