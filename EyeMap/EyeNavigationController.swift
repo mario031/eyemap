@@ -14,6 +14,7 @@ class EyeNavigationController: UINavigationController {
         super.viewDidLoad()
         let userDefaults = NSUserDefaults()
         let name:String = userDefaults.valueForKey("userName") as! String!
+        
         self.navigationItem.title = name
         self.navigationItem.hidesBackButton = true
     }

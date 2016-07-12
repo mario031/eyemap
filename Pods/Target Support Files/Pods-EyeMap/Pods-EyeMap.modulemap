@@ -1,0 +1,6 @@
+framework module Pods_EyeMap {
+  umbrella header "Pods-EyeMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

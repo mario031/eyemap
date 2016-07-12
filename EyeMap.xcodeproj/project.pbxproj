@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */; };
 		AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E311D2A732900A5D571 /* AppDelegate.swift */; };
 		AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E331D2A732900A5D571 /* ViewController.swift */; };
 		AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E351D2A732900A5D571 /* Main.storyboard */; };
@@ -30,6 +29,7 @@
 		ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC574E1D3415F2003D7E4E /* Fabric.framework */; };
 		ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57501D3415F2003D7E4E /* TwitterCore.framework */; };
 		ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC57511D3415F2003D7E4E /* TwitterKit.framework */; };
+		E0516DE427D41079C86CC74B /* Pods_EyeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8347651DAC0471D43BE2F863 /* Pods_EyeMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +64,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EyeMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D26747475CF34468C90AFD /* Pods-EyeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		7094BFF9C4164DF2A35EEDC6 /* Pods-EyeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.release.xcconfig"; sourceTree = "<group>"; };
+		8347651DAC0471D43BE2F863 /* Pods_EyeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3B3D1C1D34888500D28DE8 /* MaterialKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialKit.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/MaterialKit.framework"; sourceTree = "<group>"; };
+		AC3B3D201D349CB400D28DE8 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/SweetAlert.framework"; sourceTree = "<group>"; };
 		AC7F7E2E1D2A732900A5D571 /* EyeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7F7E311D2A732900A5D571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7F7E331D2A732900A5D571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,11 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A05857A817669E6D010D5A0 /* libPods-EyeMap.a in Frameworks */,
 				ACCC57541D3415F2003D7E4E /* TwitterCore.framework in Frameworks */,
 				ACAF879F1D341775009EE034 /* MEMELib.framework in Frameworks */,
 				ACCC57521D3415F2003D7E4E /* Fabric.framework in Frameworks */,
 				ACCC57551D3415F2003D7E4E /* TwitterKit.framework in Frameworks */,
+				E0516DE427D41079C86CC74B /* Pods_EyeMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +224,9 @@
 		F016CB7CF032957FC333BAC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				497B910CD71A4E90E9670A3B /* libPods-EyeMap.a */,
+				AC3B3D201D349CB400D28DE8 /* SweetAlert.framework */,
+				AC3B3D1C1D34888500D28DE8 /* MaterialKit.framework */,
+				8347651DAC0471D43BE2F863 /* Pods_EyeMap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

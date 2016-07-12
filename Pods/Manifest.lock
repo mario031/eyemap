@@ -1,10 +1,16 @@
 PODS:
+  - MaterialKit (0.4)
+  - SCLAlertView (0.5.9)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
+  - MaterialKit (~> 0.4)
+  - SCLAlertView
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  MaterialKit: 2e5267bcf410b82793f2b92d2111f8ae4ed2c3f2
+  SCLAlertView: d7c6a48c7d340e60206d4ed0e8ebcbff3b9d2a44
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
 COCOAPODS: 0.39.0

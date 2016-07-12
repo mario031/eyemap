@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import MaterialKit
+import SCLAlertView
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelegate {
 
@@ -73,8 +75,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
     }
     
     @IBAction func button(sender: UIButton) {
-        myLocationManager.requestLocation()
-        print(RealtimeData.sharedInstance.dict[11]["value"])
+        let connect = MEMELib.sharedInstance().isConnected
+        if connect {
+            myLocationManager.requestLocation()
+            print(RealtimeData.sharedInstance.dict[11]["value"])
+        }else{
+            let appearance = SCLAlertView.SCLAppearance(
+            showCloseButton:false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("YES", action: {
+                let FindView: MemeFindViewController = self.storyboard?.instantiateViewControllerWithIdentifier("findView") as! MemeFindViewController
+                self.navigationController?.pushViewController(FindView, animated: true)
+            })
+            alertView.addButton("NO", action:{})
+            alertView.showWarning("Not Connected", subTitle: "Connect to MEME?")
+        }
     }
     
     //位置情報取得成功時によばれる関数

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -43,16 +44,42 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWT-Gm-QQJ">
-                                <rect key="frame" x="106" y="157" width="162" height="30"/>
-                                <state key="normal" title="JINS MEMEと接続"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWT-Gm-QQJ" customClass="MKButton" customModule="MaterialKit">
+                                <rect key="frame" x="53" y="215" width="282" height="63"/>
+                                <color key="backgroundColor" red="0.14081465379735653" green="0.14955351272188455" blue="0.79718177356020936" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IWT-Gm-QQJ" secondAttribute="height" multiplier="47:12" id="WwJ-ww-VaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="JINS MEMEと接続">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.42938072643979053" green="0.42938072643979053" blue="0.42938072643979053" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="bI8-1b-IGi" kind="show" identifier="goFindMeme" id="BTW-AY-sCS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inp-2q-CBd">
-                                <rect key="frame" x="164" y="324" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inp-2q-CBd" customClass="MKButton" customModule="MaterialKit">
+                                <rect key="frame" x="53" y="374" width="282" height="63"/>
+                                <color key="backgroundColor" red="0.14081465379735653" green="0.14955351272188455" blue="0.79718177356020936" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Inp-2q-CBd" secondAttribute="height" multiplier="94:21" id="Nor-xq-Qui"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Log Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.48396520789413616" green="0.48808844515481786" blue="0.48895615183246077" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbo-Hs-4qe"/>
                                 </connections>
@@ -60,12 +87,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Inp-2q-CBd" firstAttribute="top" secondItem="IWT-Gm-QQJ" secondAttribute="bottom" constant="137" id="2Qg-h1-L1J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IWT-Gm-QQJ" secondAttribute="trailing" constant="32" id="0Zr-U2-pyP"/>
                             <constraint firstItem="08n-rV-ZbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61V-Pq-hjW"/>
-                            <constraint firstItem="IWT-Gm-QQJ" firstAttribute="top" secondItem="08n-rV-ZbI" secondAttribute="bottom" constant="69" id="Fep-z9-i6F"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Inp-2q-CBd" secondAttribute="bottom" constant="145" id="EGb-OU-7Oc"/>
                             <constraint firstItem="08n-rV-ZbI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="67" id="MGe-lb-eF5"/>
+                            <constraint firstItem="IWT-Gm-QQJ" firstAttribute="leading" secondItem="Inp-2q-CBd" secondAttribute="leading" id="P35-Ff-idG"/>
+                            <constraint firstItem="Inp-2q-CBd" firstAttribute="top" secondItem="IWT-Gm-QQJ" secondAttribute="bottom" constant="96" id="S0p-Db-4hm"/>
                             <constraint firstItem="Inp-2q-CBd" firstAttribute="centerX" secondItem="08n-rV-ZbI" secondAttribute="centerX" id="cOR-yc-04F"/>
-                            <constraint firstItem="IWT-Gm-QQJ" firstAttribute="centerX" secondItem="08n-rV-ZbI" secondAttribute="centerX" id="xqP-aY-WPa"/>
+                            <constraint firstItem="IWT-Gm-QQJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="z92-tc-yXj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I1S-Fr-BIH"/>
@@ -90,14 +119,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAO-ZP-EPS">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MAO-ZP-EPS">
                                 <rect key="frame" x="6" y="0.0" width="364" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MAO-ZP-EPS" firstAttribute="centerX" secondItem="3oK-sy-k1I" secondAttribute="centerX" id="C0i-CY-jTh"/>
                             <constraint firstItem="MAO-ZP-EPS" firstAttribute="leading" secondItem="3oK-sy-k1I" secondAttribute="leading" id="WaU-4o-8z8"/>
+                            <constraint firstItem="MAO-ZP-EPS" firstAttribute="top" secondItem="3oK-sy-k1I" secondAttribute="top" id="go9-vU-D3X"/>
+                            <constraint firstAttribute="bottom" secondItem="MAO-ZP-EPS" secondAttribute="bottom" id="tdJ-Rr-HLb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vcu-xv-JEu">
@@ -145,7 +177,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceCellIdentifier" id="s7e-cv-5VZ">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s7e-cv-5VZ" id="Ej0-L8-NOK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -215,6 +247,6 @@
         <image name="megane.png" width="55" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H4w-0X-Mun"/>
+        <segue reference="uF3-CK-iTe"/>
     </inferredMetricsTieBreakers>
 </document>

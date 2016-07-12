@@ -14,13 +14,19 @@ class MapViewController: UIViewController,UIWebViewDelegate {
     @IBOutlet weak var webview: UIWebView!
    
     var myLocationManager: CLLocationManager!
+    var myActivityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = NSUserDefaults()
         let name:String = userDefaults.valueForKey("userName") as! String!
         self.navigationItem.title = name
+        self.myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
+        myActivityIndicator.color = UIColor.blackColor()
+        myActivityIndicator.hidesWhenStopped = true
         
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: myActivityIndicator)
+
         webview.delegate = self
         //webviewに表示
         let url = NSURL(string : "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/index.php")
@@ -35,6 +41,14 @@ class MapViewController: UIViewController,UIWebViewDelegate {
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         return true
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        myActivityIndicator.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        myActivityIndicator.stopAnimating()
     }
     
     override func didReceiveMemoryWarning() {

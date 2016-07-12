@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MaterialKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-EyeMap.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C618FDA33FCF76A60650EE4C6552E18</key>
+		<key>4507412C2D8BC68848B32B1F8E7A5E2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91D3D4DFD29A4F56551F828F4A739ADF</key>
+		<key>73850773DC05DB0F801C716B2A9E95F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB88A9A5CBB410FB5AC4CCA284D1C39F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6B66647B99059BC8CD9CED7D2AE9FD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
