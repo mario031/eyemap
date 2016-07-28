@@ -12,31 +12,46 @@ import CoreLocation
 class MapViewController: UIViewController,UIWebViewDelegate {
     
     @IBOutlet weak var webview: UIWebView!
+    
+    var date:String = ""
+    var diffDate:NSDate!
    
     var myLocationManager: CLLocationManager!
-    var myActivityIndicator: UIActivityIndicatorView!
+    var dateFormatter = NSDateFormatter()
+    
+    let userDefaults = NSUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefaults = NSUserDefaults()
-        let name:String = userDefaults.valueForKey("userName") as! String!
-        self.navigationItem.title = name
-        self.myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
-        myActivityIndicator.color = UIColor.blackColor()
-        myActivityIndicator.hidesWhenStopped = true
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: myActivityIndicator)
+        self.diffDate = NSDate()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.date = dateFormatter.stringFromDate(self.diffDate)
+        self.navigationItem.title = userDefaults.valueForKey("userName") as! String + " " + self.date
 
         webview.delegate = self
         //webviewに表示
-        let url = NSURL(string : "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/index.php")
+        let url = NSURL(string : "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/index.php?name=\(userDefaults.valueForKey("userName") as! String!)&date=\(self.date)")
         let urlRequest = NSURLRequest(URL: url!)
-        //        self.webview.scalesPageToFit = true
         self.webview.loadRequest(urlRequest)
     }
     
+    //今日に戻る
     @IBAction func reload(sender: AnyObject) {
+        self.diffDate = NSDate()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.date = dateFormatter.stringFromDate(self.diffDate)
+        self.navigationItem.title = userDefaults.valueForKey("userName") as! String + " " + self.date
         self.webview.reload()
+    }
+    
+    //日付を戻る
+    @IBAction func back(sender: AnyObject) {
+        self.diffDate = NSDate(timeInterval: -24*60*60, sinceDate: self.diffDate)
+        self.date = dateFormatter.stringFromDate(self.diffDate)
+        let url = NSURL(string : "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/index.php?name=\(userDefaults.valueForKey("userName") as! String!)&date=\(self.date)")
+        let urlRequest = NSURLRequest(URL: url!)
+        self.webview.loadRequest(urlRequest)
+        self.navigationItem.title = userDefaults.valueForKey("userName") as! String + " " + self.date
     }
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
@@ -44,11 +59,11 @@ class MapViewController: UIViewController,UIWebViewDelegate {
     }
     
     func webViewDidStartLoad(webView: UIWebView) {
-        myActivityIndicator.startAnimating()
+        SVProgressHUD.showWithStatus("Now Loading")
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
-        myActivityIndicator.stopAnimating()
+        SVProgressHUD.dismiss()
     }
     
     override func didReceiveMemoryWarning() {

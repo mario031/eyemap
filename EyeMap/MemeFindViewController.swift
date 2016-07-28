@@ -12,6 +12,7 @@ final class MemeFindViewController: UITableViewController, MEMELibDelegate {
     var peripherals:NSMutableArray!
     var viewController:ViewController!
     var statusCheck: StatusCheck = StatusCheck()
+    var timer:NSTimer = NSTimer()
     
     var connectedMemeId:String!
     
@@ -26,16 +27,28 @@ final class MemeFindViewController: UITableViewController, MEMELibDelegate {
     }
     
     func scanButtonPressed(){
+        self.peripherals = []
         let status:MEMEStatus = MEMELib.sharedInstance().startScanningPeripherals()
+        SVProgressHUD.showWithStatus("Now Searching")
+        timer.invalidate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: "memeFoundError:", userInfo: nil, repeats: false)
         self.statusCheck.checkMEMEStatus(status)
     }
     
     func cancelButtonPressed(){
+        SVProgressHUD.dismiss()
+        timer.invalidate()
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func memeFoundError(timer:NSTimer){
+        MEMELib.sharedInstance().stopScanningPeripherals()
+        SVProgressHUD.showErrorWithStatus("Not Found")
     }
     
     func memePeripheralFound(peripheral: CBPeripheral!, withDeviceAddress address: String!) {
         
+        timer.invalidate()
         var alreadyFound = false
         for p in self.peripherals {
             if p.identifier == peripheral.identifier {
@@ -49,6 +62,7 @@ final class MemeFindViewController: UITableViewController, MEMELibDelegate {
             self.peripherals.addObject(peripheral)
             self.tableView.reloadData()
         }
+        SVProgressHUD.dismiss()
     }
     
     func memePeripheralConnected(peripheral: CBPeripheral!) {
@@ -59,9 +73,8 @@ final class MemeFindViewController: UITableViewController, MEMELibDelegate {
         let data = MEMELib.sharedInstance().startDataReport()
         dispatch_async(dispatch_get_main_queue(), {
             if (data == MEME_OK) { // 呼び出し結果の確認
-                SVProgressHUD.showSuccessWithStatus("Success!")
+                MEMELib.sharedInstance().stopScanningPeripherals()
                 self.performSegueWithIdentifier("backMainFromFind", sender: self)
-
             } else {
                 SVProgressHUD.dismiss()
             }
@@ -125,15 +138,16 @@ final class MemeFindViewController: UITableViewController, MEMELibDelegate {
         SVProgressHUD.showWithStatus("Now Connecting")
         self.statusCheck.checkMEMEStatus(status)
         if (status == MEME_OK) { // 呼び出し結果の確認
+            print("select MEME")
         } else {
             SVProgressHUD.dismiss()
         }
         print("Start connecting to MEME Device...")
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

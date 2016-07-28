@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1492B01D3CBF3C0016EF22 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */; };
 		AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E311D2A732900A5D571 /* AppDelegate.swift */; };
 		AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E331D2A732900A5D571 /* ViewController.swift */; };
 		AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E351D2A732900A5D571 /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		AC80F2191D3401680065B22C /* megane.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F2171D3401680065B22C /* megane.png */; };
 		AC80F21B1D3401B10065B22C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = AC80F21A1D3401B10065B22C /* map.png */; };
 		AC80F21D1D3402100065B22C /* EyeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80F21C1D3402100065B22C /* EyeTabBarController.swift */; };
-		AC85291B1D2BEC9E005B1E93 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */; };
 		AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85291F1D2BF971005B1E93 /* StatusCheck.swift */; };
 		AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8529261D2C18F8005B1E93 /* LoginViewController.swift */; };
 		ACAF879E1D341640009EE034 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */; };
@@ -67,6 +67,7 @@
 		57D26747475CF34468C90AFD /* Pods-EyeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		7094BFF9C4164DF2A35EEDC6 /* Pods-EyeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyeMap/Pods-EyeMap.release.xcconfig"; sourceTree = "<group>"; };
 		8347651DAC0471D43BE2F863 /* Pods_EyeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
 		AC3B3D1C1D34888500D28DE8 /* MaterialKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialKit.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/MaterialKit.framework"; sourceTree = "<group>"; };
 		AC3B3D201D349CB400D28DE8 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/SweetAlert.framework"; sourceTree = "<group>"; };
 		AC7F7E2E1D2A732900A5D571 /* EyeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +76,7 @@
 		AC7F7E361D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC7F7E381D2A732900A5D571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC7F7E3B1D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC7F7E3D1D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7F7E3D1D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = EyeMap/Info.plist; sourceTree = "<group>"; };
 		AC7F7E421D2A732900A5D571 /* EyeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7F7E461D2A732900A5D571 /* EyeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeMapTests.swift; sourceTree = "<group>"; };
 		AC7F7E481D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		AC80F21A1D3401B10065B22C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = Images/map.png; sourceTree = SOURCE_ROOT; };
 		AC80F21C1D3402100065B22C /* EyeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeTabBarController.swift; sourceTree = "<group>"; };
 		AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeMap-Bridging-Header.h"; sourceTree = "<group>"; };
-		AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
 		AC85291F1D2BF971005B1E93 /* StatusCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCheck.swift; sourceTree = "<group>"; };
 		AC8529261D2C18F8005B1E93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACAF879D1D341640009EE034 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
@@ -129,10 +129,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC4ED3AC1D37E379002AD378 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */,
+				AC85291F1D2BF971005B1E93 /* StatusCheck.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		AC7F7E251D2A732900A5D571 = {
 			isa = PBXGroup;
 			children = (
 				AC7F7E301D2A732900A5D571 /* EyeMap */,
+				AC7F7E3D1D2A732900A5D571 /* Info.plist */,
 				AC7F7E451D2A732900A5D571 /* EyeMapTests */,
 				AC7F7E501D2A732900A5D571 /* EyeMapUITests */,
 				AC7F7E2F1D2A732900A5D571 /* Products */,
@@ -159,14 +169,12 @@
 				AC80F21C1D3402100065B22C /* EyeTabBarController.swift */,
 				AC80F20F1D2EAD130065B22C /* EyeNavigationController.swift */,
 				AC80F20C1D2DFA240065B22C /* ViewController */,
-				AC85291A1D2BEC9E005B1E93 /* RealtimeData.swift */,
-				AC85291F1D2BF971005B1E93 /* StatusCheck.swift */,
+				AC4ED3AC1D37E379002AD378 /* Util */,
 				AC7F7E351D2A732900A5D571 /* Main.storyboard */,
 				AC7F7E381D2A732900A5D571 /* Assets.xcassets */,
 				AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */,
 				AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */,
 				AC80F2131D34001F0065B22C /* Images */,
-				AC7F7E3D1D2A732900A5D571 /* Info.plist */,
 			);
 			path = EyeMap;
 			sourceTree = "<group>";
@@ -447,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */,
-				AC85291B1D2BEC9E005B1E93 /* RealtimeData.swift in Sources */,
+				AC1492B01D3CBF3C0016EF22 /* RealtimeData.swift in Sources */,
 				AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */,
 				AC80F2091D2D6F460065B22C /* MemeFindViewController.swift in Sources */,
 				AC80F2101D2EAD130065B22C /* EyeNavigationController.swift in Sources */,

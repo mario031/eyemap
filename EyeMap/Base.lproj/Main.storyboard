@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jx-nM-dqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887.5" y="517.5"/>
+            <point key="canvasLocation" x="-909.5" y="709.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -38,32 +38,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08n-rV-ZbI">
-                                <rect key="frame" x="85" y="67" width="218" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWT-Gm-QQJ" customClass="MKButton" customModule="MaterialKit">
-                                <rect key="frame" x="53" y="215" width="282" height="63"/>
-                                <color key="backgroundColor" red="0.14081465379735653" green="0.14955351272188455" blue="0.79718177356020936" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="IWT-Gm-QQJ" secondAttribute="height" multiplier="47:12" id="WwJ-ww-VaC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="JINS MEMEと接続">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.42938072643979053" green="0.42938072643979053" blue="0.42938072643979053" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="bI8-1b-IGi" kind="show" identifier="goFindMeme" id="BTW-AY-sCS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inp-2q-CBd" customClass="MKButton" customModule="MaterialKit">
                                 <rect key="frame" x="53" y="374" width="282" height="63"/>
                                 <color key="backgroundColor" red="0.14081465379735653" green="0.14955351272188455" blue="0.79718177356020936" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,13 +58,61 @@
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rbo-Hs-4qe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWT-Gm-QQJ" customClass="MKButton" customModule="MaterialKit">
+                                <rect key="frame" x="53" y="215" width="282" height="63"/>
+                                <color key="backgroundColor" red="0.14081465379735653" green="0.14955351272188455" blue="0.79718177356020936" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IWT-Gm-QQJ" secondAttribute="height" multiplier="47:12" id="WwJ-ww-VaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="JINS MEME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.42938072643979053" green="0.42938072643979053" blue="0.42938072643979053" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushConnectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIz-lP-uoM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-EK-VvL">
+                                <rect key="frame" x="53" y="110" width="282" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="9al-1x-Noo"/>
+                                    <constraint firstAttribute="width" constant="282" id="wdL-tY-2eI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08n-rV-ZbI">
+                                <rect key="frame" x="85" y="28" width="218" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="6aV-9m-ElL"/>
+                                    <constraint firstAttribute="height" constant="56" id="wbN-Z7-gsF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-bN-2A7">
+                                <rect key="frame" x="20" y="536" width="335" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="IWT-Gm-QQJ" secondAttribute="trailing" constant="32" id="0Zr-U2-pyP"/>
+                            <constraint firstItem="08n-rV-ZbI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1JL-j4-q4f"/>
                             <constraint firstItem="08n-rV-ZbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61V-Pq-hjW"/>
+                            <constraint firstItem="gZz-EK-VvL" firstAttribute="leading" secondItem="IWT-Gm-QQJ" secondAttribute="leading" id="8GF-mX-GFs"/>
+                            <constraint firstItem="gZz-EK-VvL" firstAttribute="top" secondItem="08n-rV-ZbI" secondAttribute="bottom" constant="26" id="DSD-r7-1Vv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Inp-2q-CBd" secondAttribute="bottom" constant="145" id="EGb-OU-7Oc"/>
-                            <constraint firstItem="08n-rV-ZbI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="67" id="MGe-lb-eF5"/>
                             <constraint firstItem="IWT-Gm-QQJ" firstAttribute="leading" secondItem="Inp-2q-CBd" secondAttribute="leading" id="P35-Ff-idG"/>
                             <constraint firstItem="Inp-2q-CBd" firstAttribute="top" secondItem="IWT-Gm-QQJ" secondAttribute="bottom" constant="96" id="S0p-Db-4hm"/>
                             <constraint firstItem="Inp-2q-CBd" firstAttribute="centerX" secondItem="08n-rV-ZbI" secondAttribute="centerX" id="cOR-yc-04F"/>
@@ -100,7 +122,11 @@
                     <navigationItem key="navigationItem" id="I1S-Fr-BIH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="memeStatus" destination="08n-rV-ZbI" id="Src-x6-onO"/>
+                        <outlet property="connectButton" destination="IWT-Gm-QQJ" id="Pth-Tq-RKK"/>
+                        <outlet property="logButton" destination="Inp-2q-CBd" id="4SK-k4-cZr"/>
+                        <outlet property="logLabel" destination="Q1K-bN-2A7" id="gJO-pG-kGC"/>
+                        <outlet property="memeConnectStatus" destination="08n-rV-ZbI" id="FDU-zn-1FD"/>
+                        <outlet property="memeStatus" destination="gZz-EK-VvL" id="EQB-Sf-AWU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,6 +159,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vcu-xv-JEu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="nop-ay-Vmk">
+                            <connections>
+                                <action selector="back:" destination="q4A-wU-KJW" id="Fna-j9-kwa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8pa-4y-hFj">
                             <connections>
                                 <action selector="reload:" destination="q4A-wU-KJW" id="QfB-Bo-1vB"/>
@@ -202,11 +233,11 @@
             </objects>
             <point key="canvasLocation" x="1296.5" y="281.5"/>
         </scene>
-        <!--Settings-->
+        <!--Setting-->
         <scene sceneID="Y6L-On-9G4">
             <objects>
                 <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ylb-9g-UU3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="megane.png" id="Bcn-Cv-yEh"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="megane.png" id="VbZ-lj-vEZ"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1oF-sA-zom">
@@ -247,6 +278,6 @@
         <image name="megane.png" width="55" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uF3-CK-iTe"/>
+        <segue reference="H4w-0X-Mun"/>
     </inferredMetricsTieBreakers>
 </document>

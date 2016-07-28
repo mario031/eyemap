@@ -15,25 +15,67 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
 
     var myLocationManager: CLLocationManager!
     var statusCheck: StatusCheck = StatusCheck()
+    var powerLebel:String = "0"
+    var logStatus = false
     
+    var location:Dictionary<String,String> = [:]
+    var eyeData:[Dictionary<String,AnyObject>] = [[:],[:],[:],[:],[:]]
+    var eyeUp:[String] = []
+    var eyeDown:[String] = []
+    var eyeRight:[String] = []
+    var eyeLeft:[String] = []
+    var dataTime:[String] = []
+    var sendUp:String = "0"
+    var sendDown:String = "0"
+    var sendLeft:String = "0"
+    var sendRight:String = "0"
+    var kakudo:Float = 0.0
+    
+    var item = [[String]]()
+    var myData:String = ""
+    
+    var timer:NSTimer!
+    var index:Int = 0
+    var direction:String = "0.0"
+    
+    @IBOutlet weak var memeConnectStatus: UILabel!
+    @IBOutlet weak var connectButton: MKButton!
+    @IBOutlet weak var logButton: MKButton!
     @IBOutlet weak var memeStatus: UILabel!
+    @IBOutlet weak var logLabel: UILabel!
+    
+    let userDefaults = NSUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefaults = NSUserDefaults()
         let name:String = userDefaults.valueForKey("userName") as! String!
         self.navigationItem.title = name
         self.navigationItem.hidesBackButton = true
         
         MEMELib.sharedInstance().delegate = self
         
+        //位置情報が許可されていなかったら設定画面に遷移するかを選ぶ
         let status = CLLocationManager.authorizationStatus()
         if status == CLAuthorizationStatus.Restricted || status == CLAuthorizationStatus.Denied {
+            let alertController = UIAlertController(title: "Not allow location service", message: "Allow the service?", preferredStyle: .Alert)
+            let otherAction = UIAlertAction(title: "OK", style: .Default) {
+                action in
+                let url = NSURL(string:UIApplicationOpenSettingsURLString)
+                UIApplication.sharedApplication().openURL(url!)
+            }
+            let cancelAction = UIAlertAction(title: "CANCEL", style: .Cancel) {
+                action in
+            }
+            
+            alertController.addAction(otherAction)
+            alertController.addAction(cancelAction)
+            presentViewController(alertController, animated: true, completion: nil)
             return
         }
         myLocationManager = CLLocationManager()
         myLocationManager.delegate = self
         
+        ///アプリ起動時に位置情報が許可してなかったら許可するかを選ばせる
         if status == CLAuthorizationStatus.NotDetermined {
             myLocationManager.requestWhenInUseAuthorization()
         }
@@ -42,62 +84,209 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
             return
         }
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        myLocationManager.pausesLocationUpdatesAutomatically = false
+        myLocationManager.activityType = CLActivityType.Fitness
         myLocationManager.distanceFilter = kCLDistanceFilterNone
-//        print(MEMELib.sharedInstance().isCalibrated.rawValue)
+        myLocationManager.allowsBackgroundLocationUpdates = true
+        myLocationManager.headingOrientation = .Portrait
+        
+        //data logモード判定
+        if self.logStatus{
+            self.logButton.setTitle("Log Stop", forState: .Normal)
+        }else{
+            self.logButton.setTitle("Log Start", forState: .Normal)
+        }
+        
+    }
+    override func viewWillAppear(animated: Bool) {
         let connect = MEMELib.sharedInstance().isConnected
         if connect {
-            memeStatus.text = "Connected"
-            let calib = MEMELib.sharedInstance().isCalibrated
-            switch calib.rawValue{
-            case 0:
-                UIAlertView(title: "キャリブレーションが完了していません", message: "", delegate: nil, cancelButtonTitle: "OK").show()
-            case 1:
-                UIAlertView(title: "体軸のキャリブレーションのみ完了しています", message: "", delegate: nil, cancelButtonTitle: "OK").show()
-            case 2:
-                UIAlertView(title: "眼電位のキャリブレーションのみ完了しています", message: "", delegate: nil, cancelButtonTitle: "OK").show()
-            case 3:
-                print("キャリブレーションは完了しています")
-            default:
-                break
-            }
+            memeConnectStatus.text = "Connected"
         }else{
-            memeStatus.text = "Not Connected"
+            memeConnectStatus.text = "Not Connected"
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         }
     }
     
+    //Memeのデータ取得関数
     func memeRealTimeModeDataReceived(data: MEMERealTimeData!) {
-        
         RealtimeData.sharedInstance.memeRealTimeModeDataReceived(data)
+        let now = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let string = formatter.stringFromDate(now)
+        self.dataTime.append(string)
+        self.eyeUp.append(RealtimeData.sharedInstance.dict[3]["value"]!)
+        self.eyeDown.append(RealtimeData.sharedInstance.dict[4]["value"]!)
+        self.eyeLeft.append(RealtimeData.sharedInstance.dict[5]["value"]!)
+        self.eyeRight.append(RealtimeData.sharedInstance.dict[6]["value"]!)
+      
+        if self.logStatus == true{
+            self.memeStatus.text = ""
+            myData = "\(self.userDefaults.valueForKey("userName") as! String),\(self.location["lat"]!),\(self.location["lon"]!),\(data.eyeMoveUp),\(data.eyeMoveDown),\(data.eyeMoveLeft),\(data.eyeMoveRight),\(data.roll),\(data.pitch),\(data.yaw),\(self.kakudo),\(string)\n"
+            // ドキュメントパス
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+            //ディレクトリ名
+            let folderName = "/eyedata/"
+            // ファイル名
+            let fileName = "eyedata.csv"
+            //　ファイルのパス
+            let filePath = documentsPath+folderName+fileName
+            
+            let output = NSOutputStream(toFileAtPath: filePath, append: true)
+            output?.open()
+            let cstring = self.myData.cStringUsingEncoding(NSUTF8StringEncoding)
+            let bytes = UnsafePointer<UInt8>(cstring!)
+            let size = self.myData.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+            output?.write(bytes, maxLength: size)
+            output?.close()
+        }
+        
+        self.powerLebel = "Power:" + RealtimeData.sharedInstance.dict[2]["value"]!
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.powerLebel, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
     }
     
     func memePeripheralDisconnected(peripheral: CBPeripheral!) {
         print("disconnected")
     }
     
+    //Meme接続設定ボタンの挙動
+    @IBAction func pushConnectButton(sender: AnyObject) {
+        let findView: MemeFindViewController = self.storyboard?.instantiateViewControllerWithIdentifier("findView") as! MemeFindViewController
+        let connect = MEMELib.sharedInstance().isConnected
+        if connect {
+            let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton:false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("YES", action: {
+                    MEMELib.sharedInstance().disconnectPeripheral()
+                    MEMELib.sharedInstance().stopDataReport()
+                    self.myLocationManager.stopUpdatingLocation()
+                    self.myLocationManager.stopUpdatingHeading()
+                    self.memeConnectStatus.text = "Not Connected"
+                    self.logButton.setTitle("Log Start", forState: .Normal)
+                    self.logStatus = false
+                    self.logLabel.text = ""
+            })
+            alertView.addButton("NO", action:{})
+            alertView.showWarning("Stop Connecting?", subTitle: "")
+        }else {
+            self.navigationController?.pushViewController(findView, animated: true)
+        }
+    }
+    
+    //LogButtonを押した時の挙動
     @IBAction func button(sender: UIButton) {
         let connect = MEMELib.sharedInstance().isConnected
         if connect {
-            myLocationManager.requestLocation()
-            print(RealtimeData.sharedInstance.dict[11]["value"])
+            if self.logStatus{
+                print("Log Stop!")
+                self.logButton.setTitle("Log Start", forState: .Normal)
+                self.logStatus = false
+                self.logLabel.text = ""
+                myLocationManager.stopUpdatingLocation()
+                myLocationManager.stopUpdatingHeading()
+                self.timer.invalidate()
+            }else{
+                print("Log Start!")
+                self.logButton.setTitle("Log Stop", forState: .Normal)
+                
+                self.logLabel.text = "now logging"
+                myLocationManager.startUpdatingLocation()
+                myLocationManager.startUpdatingHeading()
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(30.0, target: self, selector: #selector(ViewController.logEye(_:)), userInfo: nil, repeats: true)
+                print(RealtimeData.sharedInstance.dict[11]["value"]!)
+            }
         }else{
             let appearance = SCLAlertView.SCLAppearance(
             showCloseButton:false
             )
             let alertView = SCLAlertView(appearance: appearance)
             alertView.addButton("YES", action: {
-                let FindView: MemeFindViewController = self.storyboard?.instantiateViewControllerWithIdentifier("findView") as! MemeFindViewController
-                self.navigationController?.pushViewController(FindView, animated: true)
+                let findView: MemeFindViewController = self.storyboard?.instantiateViewControllerWithIdentifier("findView") as! MemeFindViewController
+                self.navigationController?.pushViewController(findView, animated: true)
             })
             alertView.addButton("NO", action:{})
             alertView.showWarning("Not Connected", subTitle: "Connect to MEME?")
         }
     }
     
+    //定期的にサーバに送信
+    func logEye(timer:NSTimer){
+//        if RealtimeData.sharedInstance.dict[0]["value"] == "0"{
+//            self.memeStatus.text = ""
+//            self.eyeData[self.index] = [
+//                "uid": self.userDefaults.valueForKey("userID")!,
+//                "lat": self.location["lat"]! as String,
+//                "lon": self.location["lon"]! as String,
+//                "eyeUp": self.sendUp,
+//                "eyeDown": self.sendDown,
+//                "eyeLeft": self.sendLeft,
+//                "eyeRight": self.sendRight,
+//                "roll": RealtimeData.sharedInstance.dict[9]["value"]!,
+//                "pitch": RealtimeData.sharedInstance.dict[10]["value"]!,
+//                "yaw": RealtimeData.sharedInstance.dict[11]["value"]!,
+//                "mag": self.direction
+//            ]
+//            if self.index == 4{
+                //ドキュメントパス
+                let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+                //ディレクトリ名
+                let folderName = "/eyedata/"
+                // ファイル名
+                let fileName = "eyedata.csv"
+                //　ファイルのパス
+                let filePath = documentsPath+folderName+fileName
+    
+                let URL = NSURL(string: "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/insert_data.php")
+                let request = NSMutableURLRequest(URL: URL!)
+                request.HTTPMethod = "POST"
+                let csvData = try! NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding) as String
+                csvData.enumerateLines { (line, stop) -> () in
+                    self.item += [line.componentsSeparatedByString(",")]
+                }
+        
+                request.addValue("application/json; charaset=utf-8", forHTTPHeaderField: "Content-Type")
+                request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(self.item, options: NSJSONWritingOptions.PrettyPrinted)
+                var response: NSURLResponse?
+                let data: NSData! = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+                let myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+                print(myData)
+                self.item = [[String]]()
+//                self.index = 0
+//            }else{
+//                self.index += 1
+//            }
+////            print(self.eyeData[self.index])
+//        }else{
+//            self.memeStatus.text = "メガネをしっかりかけてください"
+//        }
+        let manager = NSFileManager()
+        try! manager.removeItemAtPath(filePath)
+    }
+    
     //位置情報取得成功時によばれる関数
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = manager.location {
-            print("緯度：\(location.coordinate.latitude)")
-            print("経度：\(location.coordinate.longitude)")
+            self.location.updateValue(NSString(format: "%.10f", location.coordinate.latitude) as String, forKey: "lat")
+            self.location.updateValue(NSString(format: "%.10f", location.coordinate.longitude) as String, forKey: "lon")
+            //print("緯度：\(location.coordinate.latitude)")
+            //print("経度：\(location.coordinate.longitude)")
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        if self.direction == "0.0" || self.direction == "0.00"{
+            self.direction = NSString(format: "%0.2f", newHeading.trueHeading) as String
+            print("方向:\(self.direction)")
+        }else{
+            if self.logStatus == false{
+                print("角度固定")
+                self.kakudo = NSString(string: RealtimeData.sharedInstance.dict[11]["value"]!).floatValue - NSString(string: self.direction).floatValue
+                self.logStatus = true
+            }
+            
         }
     }
     
