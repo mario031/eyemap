@@ -52,6 +52,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
         self.navigationItem.title = name
         self.navigationItem.hidesBackButton = true
         
+        let now:NSDate = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date:String = dateFormatter.stringFromDate(now)
+        userDefaults.setValue(date, forKey: "date")
+        
         MEMELib.sharedInstance().delegate = self
         
         //位置情報が許可されていなかったら設定画面に遷移するかを選ぶ
@@ -189,14 +195,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
                 myLocationManager.stopUpdatingHeading()
                 self.timer.invalidate()
             }else{
-                print("Log Start!")
                 self.logButton.setTitle("Log Stop", forState: .Normal)
-                
                 self.logLabel.text = "now logging"
                 myLocationManager.startUpdatingLocation()
                 myLocationManager.startUpdatingHeading()
-                self.timer = NSTimer.scheduledTimerWithTimeInterval(30.0, target: self, selector: #selector(ViewController.logEye(_:)), userInfo: nil, repeats: true)
-                print(RealtimeData.sharedInstance.dict[11]["value"]!)
             }
         }else{
             let appearance = SCLAlertView.SCLAppearance(
@@ -214,54 +216,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
     
     //定期的にサーバに送信
     func logEye(timer:NSTimer){
-//        if RealtimeData.sharedInstance.dict[0]["value"] == "0"{
-//            self.memeStatus.text = ""
-//            self.eyeData[self.index] = [
-//                "uid": self.userDefaults.valueForKey("userID")!,
-//                "lat": self.location["lat"]! as String,
-//                "lon": self.location["lon"]! as String,
-//                "eyeUp": self.sendUp,
-//                "eyeDown": self.sendDown,
-//                "eyeLeft": self.sendLeft,
-//                "eyeRight": self.sendRight,
-//                "roll": RealtimeData.sharedInstance.dict[9]["value"]!,
-//                "pitch": RealtimeData.sharedInstance.dict[10]["value"]!,
-//                "yaw": RealtimeData.sharedInstance.dict[11]["value"]!,
-//                "mag": self.direction
-//            ]
-//            if self.index == 4{
-                //ドキュメントパス
-                let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-                //ディレクトリ名
-                let folderName = "/eyedata/"
-                // ファイル名
-                let fileName = "eyedata.csv"
-                //　ファイルのパス
-                let filePath = documentsPath+folderName+fileName
+        //ドキュメントパス
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        //ディレクトリ名
+        let folderName = "/eyedata/"
+        // ファイル名
+        let fileName = "eyedata.csv"
+        //　ファイルのパス
+        let filePath = documentsPath+folderName+fileName
     
-                let URL = NSURL(string: "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/insert_data.php")
-                let request = NSMutableURLRequest(URL: URL!)
-                request.HTTPMethod = "POST"
-                let csvData = try! NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding) as String
-                csvData.enumerateLines { (line, stop) -> () in
-                    self.item += [line.componentsSeparatedByString(",")]
-                }
+        let URL = NSURL(string: "https://life-cloud.ht.sfc.keio.ac.jp/~mario/eyemap/insert_data.php")
+        let request = NSMutableURLRequest(URL: URL!)
+        request.HTTPMethod = "POST"
+        let csvData = try! NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding) as String
+        csvData.enumerateLines { (line, stop) -> () in
+            self.item += [line.componentsSeparatedByString(",")]
+        }
         
-                request.addValue("application/json; charaset=utf-8", forHTTPHeaderField: "Content-Type")
-                request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(self.item, options: NSJSONWritingOptions.PrettyPrinted)
-                var response: NSURLResponse?
-                let data: NSData! = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
-                let myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
-                print(myData)
-                self.item = [[String]]()
-//                self.index = 0
-//            }else{
-//                self.index += 1
-//            }
-////            print(self.eyeData[self.index])
-//        }else{
-//            self.memeStatus.text = "メガネをしっかりかけてください"
-//        }
+        request.addValue("application/json; charaset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(self.item, options: NSJSONWritingOptions.PrettyPrinted)
+        var response: NSURLResponse?
+        let data: NSData! = try! NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+        let myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+        print(myData)
+        self.item = [[String]]()
+        
         let manager = NSFileManager()
         try! manager.removeItemAtPath(filePath)
     }
@@ -282,7 +261,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MEMELibDelega
             print("方向:\(self.direction)")
         }else{
             if self.logStatus == false{
-                print("角度固定")
+                print("Log Start!")
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(30.0, target: self, selector: #selector(ViewController.logEye(_:)), userInfo: nil, repeats: true)
                 self.kakudo = NSString(string: RealtimeData.sharedInstance.dict[11]["value"]!).floatValue - NSString(string: self.direction).floatValue
                 self.logStatus = true
             }

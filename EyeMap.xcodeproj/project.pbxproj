@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AC1492B01D3CBF3C0016EF22 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */; };
+		AC591A321D4A27F900824C17 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = AC591A311D4A27F900824C17 /* bar.png */; };
+		AC591A341D4A2B8500824C17 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A331D4A2B8500824C17 /* MenuTableViewController.swift */; };
+		AC591A3B1D4A2CBF00824C17 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A391D4A2CBF00824C17 /* ENSideMenu.swift */; };
+		AC591A3C1D4A2CBF00824C17 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A3A1D4A2CBF00824C17 /* ENSideMenuNavigationController.swift */; };
+		AC591A3E1D4A33DA00824C17 /* MapNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A3D1D4A33DA00824C17 /* MapNavigationController.swift */; };
+		AC591A401D4A35F900824C17 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A3F1D4A35F900824C17 /* CalendarViewController.swift */; };
+		AC591A421D4A367800824C17 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A411D4A367800824C17 /* SettingsViewController.swift */; };
+		AC591A511D4A741D00824C17 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A501D4A741D00824C17 /* SwiftyJSON.swift */; };
+		AC591A531D4A7F8100824C17 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A521D4A7F8100824C17 /* CalendarCell.swift */; };
+		AC591A561D4A807700824C17 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC591A551D4A807700824C17 /* DateManager.swift */; };
 		AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E311D2A732900A5D571 /* AppDelegate.swift */; };
 		AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E331D2A732900A5D571 /* ViewController.swift */; };
 		AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E351D2A732900A5D571 /* Main.storyboard */; };
-		AC7F7E391D2A732900A5D571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E381D2A732900A5D571 /* Assets.xcassets */; };
+		AC7F7E391D2A732900A5D571 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E381D2A732900A5D571 /* Images.xcassets */; };
 		AC7F7E3C1D2A732900A5D571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */; };
 		AC7F7E471D2A732900A5D571 /* EyeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E461D2A732900A5D571 /* EyeMapTests.swift */; };
 		AC7F7E521D2A732900A5D571 /* EyeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F7E511D2A732900A5D571 /* EyeMapUITests.swift */; };
@@ -70,11 +80,21 @@
 		AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
 		AC3B3D1C1D34888500D28DE8 /* MaterialKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaterialKit.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/MaterialKit.framework"; sourceTree = "<group>"; };
 		AC3B3D201D349CB400D28DE8 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = "../../Library/Developer/Xcode/DerivedData/EyeMap-btagceluqtlskobryqxauudanlmj/Build/Products/Debug-iphoneos/SweetAlert.framework"; sourceTree = "<group>"; };
+		AC591A311D4A27F900824C17 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = Images/bar.png; sourceTree = SOURCE_ROOT; };
+		AC591A331D4A2B8500824C17 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		AC591A391D4A2CBF00824C17 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = ../Pods/ENSwiftSideMenu/Library/ENSideMenu.swift; sourceTree = "<group>"; };
+		AC591A3A1D4A2CBF00824C17 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = ../Pods/ENSwiftSideMenu/Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		AC591A3D1D4A33DA00824C17 /* MapNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapNavigationController.swift; sourceTree = "<group>"; };
+		AC591A3F1D4A35F900824C17 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		AC591A411D4A367800824C17 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AC591A501D4A741D00824C17 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		AC591A521D4A7F8100824C17 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		AC591A551D4A807700824C17 /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		AC7F7E2E1D2A732900A5D571 /* EyeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7F7E311D2A732900A5D571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7F7E331D2A732900A5D571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC7F7E361D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC7F7E381D2A732900A5D571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC7F7E381D2A732900A5D571 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AC7F7E3B1D2A732900A5D571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC7F7E3D1D2A732900A5D571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = EyeMap/Info.plist; sourceTree = "<group>"; };
 		AC7F7E421D2A732900A5D571 /* EyeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,10 +152,56 @@
 		AC4ED3AC1D37E379002AD378 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				AC591A501D4A741D00824C17 /* SwiftyJSON.swift */,
 				AC1492AF1D3CBF3C0016EF22 /* RealtimeData.swift */,
 				AC85291F1D2BF971005B1E93 /* StatusCheck.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		AC591A571D4AE9F600824C17 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AC591A521D4A7F8100824C17 /* CalendarCell.swift */,
+				AC591A3F1D4A35F900824C17 /* CalendarViewController.swift */,
+				AC591A551D4A807700824C17 /* DateManager.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		AC591A581D4AEA0500824C17 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC591A411D4A367800824C17 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		AC591A591D4AEA1700824C17 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AC80F2111D33FDC10065B22C /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		AC591A5A1D4AEA5F00824C17 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AC591A3D1D4A33DA00824C17 /* MapNavigationController.swift */,
+				AC591A331D4A2B8500824C17 /* MenuTableViewController.swift */,
+				AC591A391D4A2CBF00824C17 /* ENSideMenu.swift */,
+				AC591A3A1D4A2CBF00824C17 /* ENSideMenuNavigationController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		AC591A5C1D4AEAE600824C17 /* Meme */ = {
+			isa = PBXGroup;
+			children = (
+				AC80F2081D2D6F460065B22C /* MemeFindViewController.swift */,
+			);
+			name = Meme;
 			sourceTree = "<group>";
 		};
 		AC7F7E251D2A732900A5D571 = {
@@ -171,7 +237,7 @@
 				AC80F20C1D2DFA240065B22C /* ViewController */,
 				AC4ED3AC1D37E379002AD378 /* Util */,
 				AC7F7E351D2A732900A5D571 /* Main.storyboard */,
-				AC7F7E381D2A732900A5D571 /* Assets.xcassets */,
+				AC7F7E381D2A732900A5D571 /* Images.xcassets */,
 				AC7F7E3A1D2A732900A5D571 /* LaunchScreen.storyboard */,
 				AC8529171D2B8399005B1E93 /* EyeMap-Bridging-Header.h */,
 				AC80F2131D34001F0065B22C /* Images */,
@@ -200,10 +266,13 @@
 		AC80F20C1D2DFA240065B22C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AC80F2081D2D6F460065B22C /* MemeFindViewController.swift */,
 				AC8529261D2C18F8005B1E93 /* LoginViewController.swift */,
 				AC7F7E331D2A732900A5D571 /* ViewController.swift */,
-				AC80F2111D33FDC10065B22C /* MapViewController.swift */,
+				AC591A5C1D4AEAE600824C17 /* Meme */,
+				AC591A581D4AEA0500824C17 /* Settings */,
+				AC591A591D4AEA1700824C17 /* Map */,
+				AC591A571D4AE9F600824C17 /* Calendar */,
+				AC591A5A1D4AEA5F00824C17 /* Menu */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -211,6 +280,7 @@
 		AC80F2131D34001F0065B22C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AC591A311D4A27F900824C17 /* bar.png */,
 				AC80F21A1D3401B10065B22C /* map.png */,
 				AC80F2171D3401680065B22C /* megane.png */,
 			);
@@ -364,9 +434,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7F7E3C1D2A732900A5D571 /* LaunchScreen.storyboard in Resources */,
-				AC7F7E391D2A732900A5D571 /* Assets.xcassets in Resources */,
+				AC7F7E391D2A732900A5D571 /* Images.xcassets in Resources */,
 				AC7F7E371D2A732900A5D571 /* Main.storyboard in Resources */,
 				AC80F21B1D3401B10065B22C /* map.png in Resources */,
+				AC591A321D4A27F900824C17 /* bar.png in Resources */,
 				ACAF879E1D341640009EE034 /* TwitterKitResources.bundle in Resources */,
 				AC80F2191D3401680065B22C /* megane.png in Resources */,
 			);
@@ -454,14 +525,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC591A3C1D4A2CBF00824C17 /* ENSideMenuNavigationController.swift in Sources */,
+				AC591A531D4A7F8100824C17 /* CalendarCell.swift in Sources */,
 				AC7F7E341D2A732900A5D571 /* ViewController.swift in Sources */,
 				AC1492B01D3CBF3C0016EF22 /* RealtimeData.swift in Sources */,
+				AC591A341D4A2B8500824C17 /* MenuTableViewController.swift in Sources */,
 				AC8529201D2BF971005B1E93 /* StatusCheck.swift in Sources */,
+				AC591A3B1D4A2CBF00824C17 /* ENSideMenu.swift in Sources */,
+				AC591A561D4A807700824C17 /* DateManager.swift in Sources */,
 				AC80F2091D2D6F460065B22C /* MemeFindViewController.swift in Sources */,
 				AC80F2101D2EAD130065B22C /* EyeNavigationController.swift in Sources */,
+				AC591A421D4A367800824C17 /* SettingsViewController.swift in Sources */,
 				AC8529271D2C18F8005B1E93 /* LoginViewController.swift in Sources */,
+				AC591A3E1D4A33DA00824C17 /* MapNavigationController.swift in Sources */,
+				AC591A511D4A741D00824C17 /* SwiftyJSON.swift in Sources */,
 				AC7F7E321D2A732900A5D571 /* AppDelegate.swift in Sources */,
 				AC80F2121D33FDC10065B22C /* MapViewController.swift in Sources */,
+				AC591A401D4A35F900824C17 /* CalendarViewController.swift in Sources */,
 				AC80F21D1D3402100065B22C /* EyeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

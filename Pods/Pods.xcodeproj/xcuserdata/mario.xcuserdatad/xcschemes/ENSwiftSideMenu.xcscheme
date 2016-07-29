@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '644E2147995BBBC994EA7B27'
-               BlueprintName = 'Pods-EyeMap'
+               BlueprintIdentifier = '31E8C0CC765FF1D2E1BAD884'
+               BlueprintName = 'ENSwiftSideMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_EyeMap.framework'>
+               BuildableName = 'ENSwiftSideMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

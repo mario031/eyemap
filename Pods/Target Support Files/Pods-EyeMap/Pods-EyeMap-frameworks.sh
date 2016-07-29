@@ -84,11 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-EyeMap/ENSwiftSideMenu.framework"
   install_framework "Pods-EyeMap/MaterialKit.framework"
   install_framework "Pods-EyeMap/SCLAlertView.framework"
   install_framework "Pods-EyeMap/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-EyeMap/ENSwiftSideMenu.framework"
   install_framework "Pods-EyeMap/MaterialKit.framework"
   install_framework "Pods-EyeMap/SCLAlertView.framework"
   install_framework "Pods-EyeMap/SVProgressHUD.framework"

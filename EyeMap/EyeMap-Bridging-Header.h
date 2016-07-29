@@ -11,5 +11,4 @@
 
 #import <MEMELib/MEMELib.h>
 #import <SVProgressHUD.h>
-
 #endif /* EyeMap_Bridging_Header_h */

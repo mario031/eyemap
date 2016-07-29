@@ -8,6 +8,7 @@ target 'EyeMap' do
 	pod 'SVProgressHUD'
 	pod 'MaterialKit', '~> 0.4'
 	pod 'SCLAlertView'
+	pod 'ENSwiftSideMenu', '~> 0.1.1'
 end
 
 target 'EyeMapTests' do

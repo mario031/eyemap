@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ENSwiftSideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MaterialKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4507412C2D8BC68848B32B1F8E7A5E2A</key>
+		<key>33124168AA10DCF096B37475D0B82718</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E40B80F0FA7BDA9FBB0AB7DDCD07249</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB88A9A5CBB410FB5AC4CCA284D1C39F</key>
+		<key>7AFFB73BDB9091E7147E7439168DD3E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6B66647B99059BC8CD9CED7D2AE9FD5</key>
+		<key>82FA80696C852FC96434256B15060E25</key>
 		<dict>
 			<key>primary</key>
 			<true/>

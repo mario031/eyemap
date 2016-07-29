@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         MEMELib.setAppClientId("233760229076605", clientSecret: "ncpnyq800ucimkn83pbt7jlvvlcorjtf")
         Fabric.with([Twitter()])
@@ -28,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = loginViewController
         }
         self.window?.makeKeyAndVisible()
+        let userDefaults = NSUserDefaults()
+        userDefaults.setValue("", forKey: "value")
+        userDefaults.setValue("", forKey: "num")
+        
         return true
     }
     
