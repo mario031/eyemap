@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        MEMELib.setAppClientId("233760229076605", clientSecret: "ncpnyq800ucimkn83pbt7jlvvlcorjtf")
+        MEMELib.setAppClientId("xxx", clientSecret: "xxx")
         Fabric.with([Twitter()])
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let firstViewController = storyBoard.instantiateViewControllerWithIdentifier("EyeTabBarController")
